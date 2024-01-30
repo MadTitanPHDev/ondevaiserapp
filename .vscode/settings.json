@@ -1,0 +1,16 @@
+{
+    "explorer.compactFolders": false,
+    "emmet.syntaxProfiles": {
+
+
+
+    },
+    "emmet.preferences": {
+
+    
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascript",
+        "javascriptreact":"javascriptreact"
+    }
+}

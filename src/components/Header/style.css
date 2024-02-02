@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.headerAreaTotal{
+    background-color: #f8f3eb;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-family: Inter, sans-serif;
+    
+}
+
+.logoHeader{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.logoHeaderImg{
+    height: 150px;
+}
+
+.ondeAreaHeaderAll{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.cidadesAreaHeader{
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f3eb;
+    text-decoration: underline;
+    color: #d2ab80;
+}
+
+.ondeTxtHeader{
+    text-align: center;
+    padding: 40px;
+}

@@ -3,6 +3,9 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Card from './components/Card';
 
 
 
@@ -12,14 +15,13 @@ function App() {
       <Route path='/' element = {
          <Home />
       }>
-
       </Route>
 
       <Route path='Login' element = {
          <Login />
       }>
-
       </Route>
+      
     </Routes>
   );
 }

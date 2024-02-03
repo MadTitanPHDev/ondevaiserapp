@@ -2,16 +2,20 @@ import React from 'react'
 import Header from '../Header'
 // import Navbar from '../Navbar'
 import Footer from '../Footer'
+import Card from '../Card'
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div>
-        <Header />
-        {/* <Navbar /> */}
-        <main>
-            {children}
-        </main>
-        <Footer />
+      <Header />
+      {/* <Navbar /> */}
+      <Card />
+      <Card />
+      <Card />
+      <main>
+        {children}
+      </main>
+      <Footer />
     </div>
   )
 }

@@ -1,12 +1,14 @@
 import React from 'react'
 import './style.css'
 import LogoOndeVaiSer from '../../assets/images/LogoOndeVaiSer.png'
+import { FaUser } from 'react-icons/fa';
+
 
 const Header = () => {
-  return (
-    <header className='headerAreaTotal'>
+    return (
+        <header className='headerAreaTotal'>
             <div className='logoHeader'>
-            <img className='logoHeaderImg' src={LogoOndeVaiSer}></img>
+                <img className='logoHeaderImg' src={LogoOndeVaiSer}></img>
             </div>
 
             <div className='ondeAreaHeaderAll'>
@@ -22,9 +24,19 @@ const Header = () => {
                 </select>
             </div>
 
+            <div className='usarArea'>
+                <div className='obilongo'>
+                    <div className='risco'></div>
+                    <div className='userIco'>
+                        <div className='iconU'><FaUser size='2em' /></div>
+                        <div className='iconU'><FaUser size='2em' /></div>
+                    </div>
+                </div>
+            </div>
+
 
         </header>
-  )
+    )
 }
 
 export default Header

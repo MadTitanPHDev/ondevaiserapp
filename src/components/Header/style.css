@@ -7,35 +7,38 @@
     border: 0;
 }
 
-.headerAreaTotal{
+.headerAreaTotal {
     background-color: #f8f3eb;
     width: 100vw;
+    height: 120px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex: 1;
     font-family: Inter, sans-serif;
-    
+   
 }
 
-.logoHeader{
+.logoHeader {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-
+    align-items: center;
 }
 
-.logoHeaderImg{
+.logoHeaderImg {
     height: 150px;
 }
 
-.ondeAreaHeaderAll{
+.ondeAreaHeaderAll {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
-.cidadesAreaHeader{
+.cidadesAreaHeader {
     width: 200px;
     align-items: center;
     justify-content: center;
@@ -44,7 +47,40 @@
     color: #d2ab80;
 }
 
-.ondeTxtHeader{
+.ondeTxtHeader {
     text-align: center;
     padding: 40px;
+}
+
+/* user area */
+
+.userArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    right: 0px;
+}
+
+.obilongo {
+    display: flex;
+    flex: 1;
+    border: solid black 2px;
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    border-radius: 50px;
+}
+
+.userIco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.iconU {
+    
 }

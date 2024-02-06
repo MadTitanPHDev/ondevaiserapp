@@ -1,10 +1,11 @@
-import './style.css'
-
 import React from 'react'
+import Layout from '../../components/Layout'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='container'>
+      <Layout/>
+    </div>
   )
 }
 

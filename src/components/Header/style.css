@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+header {    
+    height: 200px;    
+    width: 100%;
+    background-color: #F1F1F1;
+}
+
+.headerArea {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navArea {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoArea img {
+    height: 100px;
+}

@@ -1,8 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
-
-
+import Categoria from './pages/Categoria';
 
 function App() {
   return (
@@ -10,8 +9,13 @@ function App() {
       <Route path='/' element = {
          <Home />
       }>
-
       </Route>
+
+      <Route path='/categoria' element = {
+         <Categoria />
+      }>
+      </Route>
+
     </Routes>
   );
 }

@@ -1,0 +1,147 @@
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.buscaArea
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.buscaAreaIcone
+{
+    position: relative;
+}
+
+.rowArea
+{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+}
+
+#barradebusca
+{
+    background-color:transparent;
+    padding-left:7px;
+    font-style:italic;
+    font-size:12px;
+    border:solid 1px #929292;
+    border-radius: 25px;
+    height:60px;
+    width:260px;
+    margin-bottom: 10px;
+}
+
+.iconsArea 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cardArea 
+{
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+.cardtexto
+{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 20px;
+}
+
+.nota, .star
+{
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    margin-left: 320px;
+    margin-bottom: -15px;
+}
+
+.star 
+{
+    margin-left: 305px;
+    margin-bottom: -16px;
+    width: 12px;
+}
+
+.nota
+{
+    font-size: 14px;
+}
+
+.letraMaior
+{
+    font-size: 20px;
+}
+
+.letraMenor
+{
+    font-size: 15px;
+}
+
+.cardCoracao
+{
+    width: 100%;
+    position: relative;
+    justify-content: right;
+    align-items: center;
+    margin: 290px;
+    margin-right: 10px;
+}
+
+.cardContent 
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-image: url(./../../assets/images/Chácara\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    padding: 30px;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.cardContent2 
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-image: url(./../../assets/images/Chácara\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    padding: 30px;
+    align-items: flex-end;
+    margin-top: 90px;
+}

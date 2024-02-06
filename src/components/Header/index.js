@@ -24,11 +24,12 @@ const Header = () => {
                 </select>
             </div>
 
-            <div className='usarArea'>
+            <div className='userArea'>
                 <div className='obilongo'>
-                    <div className='risco'></div>
-                    <div className='userIco'>
+                    <div className='risco'>
                         <div className='iconU'><FaUser size='2em' /></div>
+                    </div>
+                    <div className='userIco'>
                         <div className='iconU'><FaUser size='2em' /></div>
                     </div>
                 </div>

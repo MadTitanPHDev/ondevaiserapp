@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: 0;
-}
+
 
 .footerAreaTotal{
     background-color: #f8f3eb;
@@ -12,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+    position: relative;
     bottom: 0;
 }
 

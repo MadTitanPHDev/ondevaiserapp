@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
     font-family: Inter, sans-serif;
    
 }
@@ -58,29 +57,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    position: absolute;
-    right: 0px;
+    width: 200px;
 }
 
 .obilongo {
     display: flex;
-    flex: 1;
     border: solid black 2px;
     height: 60px;
     width: 100px;
     position: absolute;
     right: 0px;
     border-radius: 50px;
-}
-
-.userIco{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex: 1;
+    justify-content: center;
 }
 
-.iconU {
-    
-}

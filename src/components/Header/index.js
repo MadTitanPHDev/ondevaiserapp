@@ -25,6 +25,7 @@ const Header = () => {
             </div>
 
             <div className='userArea'>
+                
                 <div className='obilongo'>
                     <div className='risco'>
                         <div className='iconU'><FaUser size='2em' /></div>

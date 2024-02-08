@@ -3,10 +3,8 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Card from './components/Card';
 import Sobre from './pages/Sobre';
+import CadastroLocal from './pages/Cadastrolocal';
 
 
 
@@ -26,6 +24,11 @@ function App() {
 
       <Route path='/Sobre' element = {
          <Sobre />
+      }>
+      </Route>
+
+      <Route path='/CadastroLocal' element = {
+         <CadastroLocal />
       }>
       </Route>
       

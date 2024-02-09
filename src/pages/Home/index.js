@@ -10,11 +10,11 @@ const Home = () => {
   return (
     // <div className='container'>
       <Layout>
-      {/* <div className='homeArea'>Home</div> */}
+      <div className='homeArea'>
       <Card imgsrc={img1Card} />
       <Card imgsrc={img2Card} />
       <Card imgsrc={img3Card} />
-
+      </div>
       </Layout>
       
     // </div>

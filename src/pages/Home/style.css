@@ -1,3 +1,6 @@
 .homeArea {
-    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 336px);
 }

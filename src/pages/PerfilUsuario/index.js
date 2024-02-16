@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 import Layout from '../../components/Layout'
-import minhaImagem from '../../assets/images/minhaImagem.jpg'
+import pessoa from '../../assets/images/pessoa.png'
 import chácara1 from '../../assets/images/Chácara 1.jpg'
 import chácara3 from '../../assets/images/Chácara 3.jpg'
 
@@ -13,10 +13,16 @@ const PerfilUsuario = () => {
 
                 <div className='content2'>
 
+                    <div className='areaSair'>
+                        <p>Área Exclusiva de Eloisa.</p>
+                    </div>
+                    
+                    <a href='http://localhost:3000'><button className='buttonSair' id='buttonSair'>Sair</button></a>
+                    
                     <div class="fotodesc">
 
                         <div class="foto">
-                            <img className='minhaImagem' src={minhaImagem} alt="Imagem do usuário do perfil"/>
+                            <img className='pessoa' src={pessoa} alt="Imagem do usuário do perfil"/>
                         </div>
 
                         <div class="descricao">
@@ -70,15 +76,15 @@ const PerfilUsuario = () => {
                             <h1>Avaliação</h1>
 
                             <div className='avaliacao'>
-                                <img className='minhaImagem' src={minhaImagem} alt="Imagem do usuário do perfil"/>
-                                <img className='minhaImagem' src={minhaImagem} alt="Imagem do usuário do perfil"/>
-                                <img className='minhaImagem' src={minhaImagem} alt="Imagem do usuário do perfil"/>
+                                <img className='pessoa' src={pessoa} alt="Imagem do usuário do perfil"/>
+                                <img className='pessoa' src={pessoa} alt="Imagem do usuário do perfil"/>
+                                <img className='pessoa' src={pessoa} alt="Imagem do usuário do perfil"/>
                             </div>
 
                             <div className='avaliacao'>
                                 <p>Este lugar é incrível, vou recomendar com certeza.</p>
-                                <p>Este lugar é incrível, vou recomendar com certeza.</p>
-                                <p>Este lugar é incrível, vou recomendar com certeza.</p>
+                                <p>Que festa maravilhosa e tudo lindo, estão de parabéns.</p>
+                                <p>O estacionamento podia ser maior, mas estava tudo lindo.</p>
                             </div>
 
                         </div>

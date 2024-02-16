@@ -1,6 +1,6 @@
 .section
 {
-    margin-right: 40px;
+    margin-right: 45px;
 }
 
 .content2
@@ -13,6 +13,38 @@
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     padding: 20px;
     flex: 1;
+}
+
+.areaSair
+{
+    font-size: 13px;
+    text-align: left;
+    margin-left: 400px;
+    margin-right: -80px;
+    margin-top: -65px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.buttonSair
+{
+    font-size: 13px;
+    border-radius: 18px;
+    color: black;
+    background-color: #EDEDED;
+    height: 25px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 750px;
+    margin-top: -20px;
+}
+
+.buttonSair:hover
+{
+    color: blue;
 }
 
 .fotodesc
@@ -111,24 +143,24 @@
     flex-direction: column;
     text-align: left;
     position: absolute;
-    margin-top: -370px;
+    margin-top: -395px;
     margin-left: 100px;
 }
 
 button
 {
-    font-size: 18px;
+    font-size: 16px;
     border: solid 1px black;
     border-radius: 18px;
     color: black;
     background-color: #fff887;
-    height: 40px;
-    width: 110px;
+    height: 35px;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 270px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .button:hover
@@ -140,7 +172,7 @@ button
 {
     font-size: 20px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 50px;
 }
 
@@ -164,7 +196,6 @@ button
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
 }
 
 .avaliacao p
@@ -175,7 +206,7 @@ button
     justify-content: space-between;
     margin: 10px;
     padding: 67px;
-    margin-top: -70px;
-    margin-bottom: 100px;
+    margin-top: -80px;
+    margin-bottom: 130px;
     text-align: center;
 }

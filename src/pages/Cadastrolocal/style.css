@@ -1,17 +1,4 @@
-img{
-    display: block; /* Torna a imagem um elemento de bloco */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto;
-}
- 
- 
-h1{
-    font-size: 24px; /* Define o tamanho da fonte */
-    font-weight: bold; /* Define o peso da fonte (negrito) */
-    color: #333; /* Define a cor do texto */
-    text-align: center;
-   
-}
+
  
 .container {
     background-color: white;
@@ -45,40 +32,49 @@ h1{
    
 }
  
-.content {
-    display: flex;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #ccc;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-   
-}
  
-.buttonSubmit{
+.btnArea{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    display: flex;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid black;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 0, 0.301);
-    width: 150px; /* Define a largura do botão */
-    height: 20px; /* Define a altura do botão */
-    display: block; /* Para utilizar margin: auto; */
-    margin: 0 auto;
-   
 }
+
+.buttonSubmit {
+    all: unset;
+}
+
+.buttonSubmit {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 26px;
+    background-color: #f8f3eb;
+    border: 2px solid #d2ab80;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .buttonSubmit::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #d2ab80;
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
+  }
+  
+  .buttonSubmit:hover::after {
+    translate: 0;
+  }
+  .buttonSubmit:hover {
+    background-color: #d2ab80;
+    color: #f8f3eb;
+  }
+
 
  
 

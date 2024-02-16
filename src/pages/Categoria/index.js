@@ -3,7 +3,6 @@ import './style.css'
 import Layout from '../../components/Layout'
 import { FaMugHot, FaRegHeart, FaSearch, FaStar, FaTree, FaWarehouse } from 'react-icons/fa';
 
-
 const Categoria = () => {
   return (
     <div className='container'>

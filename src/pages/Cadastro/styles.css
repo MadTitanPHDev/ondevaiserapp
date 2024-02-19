@@ -1,0 +1,109 @@
+img{
+    display: block; /* Torna a imagem um elemento de bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto;
+}
+
+
+h1{
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte (negrito) */
+    color: #333; /* Define a cor do texto */
+    text-align: center;
+    
+}
+
+.container {
+    background-color: white;
+}
+ 
+.inputArea {
+    border: 1px solid #ccc;
+    height: 35px;
+    padding-left: 6px;
+    color: #00f;
+    font-weight: 700;
+    outline-color: coral;
+    border-radius: 50px;
+}
+ 
+.campoArea {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 8px;
+    border-radius: 50px;
+}
+ 
+.formArea {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    
+}
+ 
+.content {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+.buttonCampo{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid black;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 0, 0.301);
+    width: 150px; /* Define a largura do botão */
+    height: 20px; /* Define a altura do botão */
+    display: block; /* Para utilizar margin: auto; */
+    margin: 0 auto; 
+   
+}
+.buttonArea{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid black;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+   
+}
+
+.btnArea
+{
+    margin-top: 20px;
+}
+
+.btncampos
+{
+    margin-top: 20px;
+}
+

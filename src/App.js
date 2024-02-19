@@ -8,10 +8,13 @@ import CadastroLocal from './pages/Cadastrolocal';
 
 
 
+import Categoria from './pages/Categoria';
+import PerfilUsuario from './pages/PerfilUsuario'
 
 function App() {
   return (
     <Routes>
+      
       <Route path='/' element = {
          <Home />
       }>
@@ -32,6 +35,16 @@ function App() {
       }>
       </Route>
       
+      <Route path='/categoria' element = {
+         <Categoria />
+      }>
+      </Route>
+
+      <Route path='/perfilusuario' element = {
+         <PerfilUsuario />
+      }>
+      </Route>
+
     </Routes>
   );
 }

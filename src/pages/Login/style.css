@@ -19,7 +19,7 @@
     flex: 1;
   }
 
-.inputArea, .passArea {
+.loginInputArea, .passArea {
     font-size: 1.25rem;
     position: relative;
     --primary: #b3b792;

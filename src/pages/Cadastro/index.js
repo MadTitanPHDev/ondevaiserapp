@@ -17,7 +17,7 @@ const Cadastro = () => {
   <img src={imagem}/>
             
             <div>
-                <h1>
+                <h1 className='dados'>
                     Insira seus dados para realizar o cadastro
                 </h1>
             </div>

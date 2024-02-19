@@ -7,6 +7,7 @@ import PerfilUsuario from './pages/PerfilUsuario'
 function App() {
   return (
     <Routes>
+      
       <Route path='/' element = {
          <Home />
       }>

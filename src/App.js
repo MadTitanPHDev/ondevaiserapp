@@ -5,15 +5,28 @@ import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Sobre from './pages/Sobre';
 import CadastroLocal from './pages/Cadastrolocal';
+import Recantodospassaros from './pages/Recantodospassaros';
 
 
-
+import Categoria from './pages/Categoria';
+import PerfilUsuario from './pages/PerfilUsuario'
 
 function App() {
   return (
     <Routes>
+      
       <Route path='/' element = {
-         <Home />
+         <Home/>
+      }>
+      </Route>
+
+      <Route path='/cadastro' element = {
+        <Cadastro />
+      }>
+
+      </Route>
+      <Route path='/Recantodospassaros' element = {
+        <Recantodospassaros />
       }>
       </Route>
 
@@ -32,6 +45,16 @@ function App() {
       }>
       </Route>
       
+      <Route path='/categoria' element = {
+         <Categoria />
+      }>
+      </Route>
+
+      <Route path='/perfilusuario' element = {
+         <PerfilUsuario />
+      }>
+      </Route>
+
     </Routes>
   );
 }

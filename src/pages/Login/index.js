@@ -12,19 +12,22 @@ const Login = () => {
                 <input className='inputLogin' required autocomplete="off" type="text" name="username" id="username" />
                 <label className='loginLabel' for='username'>Email</label>
             </div>
+
             <div className='passArea'>
                 <input className='inputSenha' required autocomplete="off" type="password" name="senha" id="senha" />
                 <label className='senhaLabel' for='senha'>Senha</label>
             </div>
 
-            {/* <div class="esqPass">
+            <div class="esqSenhaArea">
                 <label>
-                    <input type="checkbox">Lembrar de mim.</input>
+                    
+                    <input type='checkbox'></input>
+                     Lembre de mim.
                 </label>
                 <label>
-                    <a href="#">Esqueceu sua senha?</a>
+                    <a href="#">Esqueceu a senha?</a>
                 </label>
-            </div> */}
+            </div>
 
             <div className='btnArea'>
                 <button className='btnLogin'>

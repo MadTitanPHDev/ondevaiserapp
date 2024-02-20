@@ -5,7 +5,7 @@ import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Sobre from './pages/Sobre';
 import CadastroLocal from './pages/Cadastrolocal';
-
+import Recantodospassaros from './pages/Recantodospassaros';
 
 
 import Categoria from './pages/Categoria';
@@ -16,7 +16,17 @@ function App() {
     <Routes>
       
       <Route path='/' element = {
-         <Home />
+         <Home/>
+      }>
+      </Route>
+
+      <Route path='/cadastro' element = {
+        <Cadastro />
+      }>
+
+      </Route>
+      <Route path='/Recantodospassaros' element = {
+        <Recantodospassaros />
       }>
       </Route>
 

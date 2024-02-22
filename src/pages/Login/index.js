@@ -6,8 +6,6 @@ const Login = () => {
     return (
         <div className='loginBody'>
             <Layout>
-
-
                 <div className='loginBodyArea'>
                     <div className='loginInputArea'>
                         <input className='inputLogin' required autocomplete="off" type="text" name="username" id="username" />

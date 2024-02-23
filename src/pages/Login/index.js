@@ -4,8 +4,9 @@ import Layout from '../../components/Layout'
 
 const Login = () => {
     return (
-        <div className='loginBody'>
-            <Layout>
+        <Layout>
+            <div className='loginBody'>
+
                 <div className='loginBodyArea'>
                     <div className='loginInputArea'>
                         <input className='inputLogin' required autocomplete="off" type="text" name="username" id="username" />
@@ -34,10 +35,10 @@ const Login = () => {
                         </button>
                     </div>
                 </div>
-            </Layout>
 
-        </div>
 
+            </div>
+        </Layout>
     )
 }
 

@@ -14,9 +14,9 @@ const CadastroLocal = () => {
   }
 
   return (
+    <Layout>
+      <div className='formArea'>
 
-    <div className='formArea'>
-      <Layout>
         <form>
 
           <div className='imagensUpload'>
@@ -65,9 +65,9 @@ const CadastroLocal = () => {
           </div>
 
         </form>
-      </Layout>
-    </div>
 
+      </div>
+    </Layout>
 
   )
 }

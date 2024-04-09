@@ -134,12 +134,12 @@
     transform: translateY(50%);
 }
 
-.cardArea:hover .texto h2 {
+.cardAreaC:hover .texto h2 {
     scale: 1;
     opacity: 1;
 }
 
-.cardArea:hover .texto P {
+.cardAreaC:hover .texto P {
     opacity: 1;
     transform: translateY(0);
 }

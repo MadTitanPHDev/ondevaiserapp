@@ -45,12 +45,12 @@ function App() {
       }>
       </Route>
       
-      <Route path='/categoria' element = {
+      <Route path='/Categoria' element = {
          <Categoria />
       }>
       </Route>
 
-      <Route path='/perfilusuario' element = {
+      <Route path='/PerfilUsuario' element = {
          <PerfilUsuario />
       }>
       </Route>

@@ -5,14 +5,14 @@ import Layout from '../../components/Layout';
 
 const Cadastro = () => {
     //retorna elementos visuais e componentes(pagina)
-    const [formDados, setFormDados] = useState({ nome: '', apelido: '', email: '', password: '', number: '' });
+    const [formDados, setFormDados] = useState({ nome: '', nick: '', cpf: '', email: '', password: '', number: '' });
     //{} objeto JSON
 
     function handleChange(event) {//toda funcao recebe argumentos(arg1, arg2)
         console.log(event.target.value);
         setFormDados({ ...formDados, [event.target.name]: event.target.value })
     }
-    return (
+  return (  
 
         <section className='container'>
             <Layout>

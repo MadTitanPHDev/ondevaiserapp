@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 const Cadastro = () => {
     //retorna elementos visuais e componentes(pagina)
-    const [formDados, setFormDados] = useState({ nome: '', apelido: '', email: '', password: '', number: '' });
+    const [formDados, setFormDados] = useState({ nome: '', nick: '', cpf: '', email: '', password: '', number: '' });
     //{} objeto JSON
  
     function handleChange(event) {//toda funcao recebe argumentos(arg1, arg2)
@@ -13,6 +13,8 @@ const Cadastro = () => {
     }
   return (  
        
+
+    
     <section className='container'>
   <img src={imagem}/>
             
@@ -29,8 +31,13 @@ const Cadastro = () => {
                     </div>
  
                     <div className='campoArea'>
-                        <label>Apelido</label>
+                        <label>Nome de Usuário</label>
                         <input className='inputArea' type='text' name='nick' id='nick' onChange={event => handleChange(event)} value={formDados.nick} />
+                    </div>
+
+                    <div className='campoArea'>
+                        <label>CPF</label>
+                        <input className='inputArea' type='text' name='cpf' id='cpf' onChange={event => handleChange(event)} value={formDados.cpf} />
                     </div>
  
                     <div className='campoArea'>

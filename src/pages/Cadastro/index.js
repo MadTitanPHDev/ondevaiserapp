@@ -1,12 +1,9 @@
 import './styles.css';
 import imagem from './imagemondevaiser.png'
-import { useState } from 'react';
 import { Field, Form, Formik } from 'react-router-dom';
 import { initialUsuario, useInfoContext } from '../../components/context/PostContext';
 
 const Cadastro = () => {
-
-    // const [formDados, setFormDados] = useState({ nome: '', nick: '', cpf: '', email: '', senha: '', telefone: '' });
  
     const {users, addUser} = useInfoContext();
 

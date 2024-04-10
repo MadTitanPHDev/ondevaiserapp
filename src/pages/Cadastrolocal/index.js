@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
 import './style.css'
 import { Field, Form, Formik } from 'react-router-dom';
 import { initialLocal, useInfoContext } from '../../components/context/PostContext';
 
 const CadastroLocal = () => {
-
-  // const [formLocal, setFormLocal] = useState({ nomeLocal: '', endereco: '', cep: '', valor: '', carac: '', descr: '' });
 
   const { local, addLocal } = useInfoContext();
 

@@ -8,8 +8,8 @@ const dataSaveInitialUsuario =
 
 const dataSaveInitialLocal = 
 [
-    {id: 1, nomeLocal: 'Marisa', endereco: 'Rua Antonio Silva', cep: '19000000', valor: '1350', carac: 'piscina, estacionamento, ar condicionado, churrascaria, freezer, geladeria, fogao', descricao: 'Chácara para final de semana e temporadas.'},
-    {id: 2, nomeLocal: 'Eloisa', endereco: 'Rua dos Ipes', cep: '19000000', valor: '3000', carac: 'garagem, freezer, fogao, churrasqueira, piscina, internet wifi, mesas e cadeiras', descricao: 'Ideal para uma semana de Home-Office enquanto a família se diverte. Cidade rodeada por Cachoeiras e Montanhas. Fácil acesso saindo de São Paulo.'}
+    {id: 1, nomeLocal: 'Marisa', endereco: 'Rua Antonio Silva', cep: '19000000', valor: '1350', carac: 'piscina, estacionamento, ar condicionado, churrascaria, freezer, geladeria, fogao', descr: 'Chácara para final de semana e temporadas.'},
+    {id: 2, nomeLocal: 'Eloisa', endereco: 'Rua dos Ipes', cep: '19000000', valor: '3000', carac: 'garagem, freezer, fogao, churrasqueira, piscina, internet wifi, mesas e cadeiras', descr: 'Ideal para uma semana de Home-Office enquanto a família se diverte. Cidade rodeada por Cachoeiras e Montanhas. Fácil acesso saindo de São Paulo.'}
 ]
 
 const initialUsuario = 
@@ -31,7 +31,7 @@ const initialLocal =
     cep: '',
     valor: '',
     carac: '',
-    descri: ''
+    descr: ''
 }
 
 const InfoContext = createContext(undefined);

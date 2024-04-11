@@ -1,79 +1,77 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  .foto {
+    width: 570px;
+    height: 310px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #2DD7EB;
+    border-style: solid;
   }
-  
-  .foto{
-  width: 570px;
-  height:310px ;
-  border-radius: 10px;
-  border-width: 1px;
-  border-color: #2DD7EB;
-  border-style: solid;
-}
-h1{
- font-size: 30px;
- color: #676D32;
- border-color: black;
- border-width:3px ;
- text-align: center;
 
- 
-}
+  .tituloLocal {
+    font-size: 30px;
+    color: #676D32;
+    border-color: black;
+    border-width: 3px;
+    text-align: center;
 
 
+  }
 
-.map{
-  display: flex;
-  flex-direction: row;
-  
-  margin-left: 800px;
-  line-height: 1.5;
-  align-items: center;
-  
-}
+  .map {
+    display: flex;
+    flex-direction: row;
 
-.localiza{
-  max-height: 300px;
-  flex-direction: row;
-  width: 500px;
-  border-radius: 50px;
-  display: flex;
-  font-size: 20px; 
-  margin-left: 650px;
-  line-height: 1.5;
-  border-width: 3px;
-  border-color: #2DD7EB;
-  border-style: solid;
-  
-}
-.avalia{
-  display: flex;
-  flex-direction: row;
-  font-size: 20px; 
-  margin-left: 650px;
-  line-height: 1.5;
-  margin-left: 800px;
- 
-}
-.comentarios{
-  max-height: 300px;
-  flex-direction: row;
-  width: 500px;
-  border-radius: 50px;
-  display: flex;
-  font-size: 20px; 
-  margin-left: 650px;
-  line-height: 1.5;
- 
-}
+    margin-left: 800px;
+    line-height: 1.5;
+    align-items: center;
 
- section{
-  color: #676D32;
- }
-.sala16{
-  color: aqua;
-  height: 100%;
-  width: 100%;
-}
+  }
+
+  .localiza {
+    max-height: 300px;
+    flex-direction: row;
+    width: 500px;
+    border-radius: 50px;
+    display: flex;
+    font-size: 20px;
+    margin-left: 650px;
+    line-height: 1.5;
+    border-width: 3px;
+    border-color: #2DD7EB;
+    border-style: solid;
+
+  }
+
+  .avalia {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin-left: 650px;
+    line-height: 1.5;
+    margin-left: 800px;
+
+  }
+
+  .comentarios {
+    max-height: 300px;
+    flex-direction: row;
+    width: 500px;
+    border-radius: 50px;
+    display: flex;
+    font-size: 20px;
+    margin-left: 650px;
+    line-height: 1.5;
+
+  }
+
+  .container {
+    display: flex;
+    
+    color: #676D32;
+  }
+
+  .sala16 {
+    color: aqua;
+    height: 100%;
+    width: 100%;
+  }

@@ -6,8 +6,6 @@ import Cadastro from './pages/Cadastro';
 import Sobre from './pages/Sobre';
 import CadastroLocal from './pages/Cadastrolocal';
 import Recantodospassaros from './pages/Recantodospassaros';
-
-
 import Categoria from './pages/Categoria';
 import PerfilUsuario from './pages/PerfilUsuario'
 
@@ -45,13 +43,18 @@ function App() {
       }>
       </Route>
       
-      <Route path='/categoria' element = {
+      <Route path='/Categoria' element = {
          <Categoria />
       }>
       </Route>
 
-      <Route path='/perfilusuario' element = {
+      <Route path='/PerfilUsuario' element = {
          <PerfilUsuario />
+      }>
+      </Route>
+
+      <Route path='/Sobre' element = {
+         <Sobre />
       }>
       </Route>
 

@@ -6,7 +6,7 @@ const Card = ({ imgsrc }) => {
   return (
     <div className='cardAreaAll'>
       
-        <div className='cardArea'>
+        <div className='cardAreaC'>
           <img className='imgBox' src={imgsrc} />
         </div>
 

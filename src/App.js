@@ -53,6 +53,11 @@ function App() {
       }>
       </Route>
 
+      <Route path='/Sobre' element = {
+         <Sobre />
+      }>
+      </Route>
+
     </Routes>
   );
 }

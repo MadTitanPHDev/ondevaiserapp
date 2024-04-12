@@ -10,7 +10,7 @@ const MaisInformacoes = () => {
     return (
         <section className='container'>
             <Layout>
-                <h1>Recanto dos Pássaros</h1>
+                <h1 className='tituloLocal'>Recanto dos Pássaros</h1>
                 <img src={imagem} className='foto' />
 
                 <div >

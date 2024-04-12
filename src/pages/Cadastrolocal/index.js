@@ -56,8 +56,6 @@ const CadastroLocal = () => {
             id='nomeLocal'
             placeHolder="Insira o nome do local"
             >
-              
-             
             </Field>
           </div>
  
@@ -68,8 +66,6 @@ const CadastroLocal = () => {
             name='endereco' 
             id='endereco'
             placeHolder="Endedeço">
-            
-           
             </Field>
           </div>
  
@@ -80,8 +76,7 @@ const CadastroLocal = () => {
             maxLength={8} 
             name='cep' 
             id='cep'
-            placeHolder="CEP">
-              
+            placeHolder="CEP"> 
             </Field>
           </div>
  
@@ -92,8 +87,6 @@ const CadastroLocal = () => {
             name='valor' 
             id='valor' 
             placeHolder="Qual o valor da diaria?">
-             
-            
             </Field>
           </div>
  

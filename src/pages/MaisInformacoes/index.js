@@ -8,7 +8,7 @@ import Layout from '../../components/Layout'
 
 const MaisInformacoes = () => {
     return (
-        <section className='container'>
+        <section className='maisInfoArea'>
             <Layout>
                 <h1 className='tituloLocal'>Recanto dos Pássaros</h1>
                 <img src={imagem} className='foto' />

@@ -7,7 +7,7 @@ import chácara3 from '../../assets/images/Chácara 3.jpg'
 
 const PerfilUsuario = () => {
   return (
-    <div className='container'>
+    <div className='perfilArea'>
         <Layout>
             <section className='section'>
 

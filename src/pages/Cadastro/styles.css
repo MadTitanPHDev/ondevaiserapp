@@ -15,7 +15,7 @@ img{
     text-align: center; 
 }
  
-.container {
+.cadastroAreaTotal {
     background-color: white;
 }
  
@@ -37,7 +37,7 @@ img{
     border-radius: 50px;
 }
  
-.formArea {
+.formCadastroArea {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;

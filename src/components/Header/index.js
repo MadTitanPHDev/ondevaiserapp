@@ -8,7 +8,15 @@ const Header = () => {
     return (
         <header className='headerAreaTotal'>
             <div className='logoHeader'>
-                <img className='logoHeaderImg' src={LogoOndeVaiSer}></img>
+                <a href='/'><img className='logoHeaderImg' src={LogoOndeVaiSer}></img></a>
+            </div>
+
+            <div className='btnCadastroArea'>
+                <ol>
+                    <li>
+                        <a href='/Cadastro'>Cadastro</a>
+                    </li>
+                </ol>
             </div>
 
             <div className='ondeAreaHeaderAll'>
@@ -27,12 +35,7 @@ const Header = () => {
             <div className='userArea'>
 
                 <div className='obilongo'>
-                    <div className='risco'>
-                        <div className='iconU'><FaUser size='2em' /></div>
-                    </div>
-                    <div className='userIco'>
-                        <div className='iconU'><FaUser size='2em' /></div>
-                    </div>
+                    <a href='/Login'>Login</a>
                 </div>
             </div>
 

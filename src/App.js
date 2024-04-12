@@ -5,16 +5,16 @@ import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Sobre from './pages/Sobre';
 import CadastroLocal from './pages/Cadastrolocal';
-import Recantodospassaros from './pages/Recantodospassaros';
+import MaisInformacoes from './pages/MaisInformacoes';
 import Categoria from './pages/Categoria';
-import PerfilUsuario from './pages/PerfilUsuario'
+import PerfilUsuario from './pages/PerfilUsuario';
 
 function App() {
   return (
     <Routes>
       
       <Route path='/' element = {
-         <Home/>
+         <Home />
       }>
       </Route>
 
@@ -23,8 +23,8 @@ function App() {
       }>
 
       </Route>
-      <Route path='/Recantodospassaros' element = {
-        <Recantodospassaros />
+      <Route path='/MaisInformacoes' element = {
+        <MaisInformacoes />
       }>
       </Route>
 

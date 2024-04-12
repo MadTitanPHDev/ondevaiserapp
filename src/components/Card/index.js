@@ -12,8 +12,6 @@ const Card = ({ imgsrc }) => {
 
         <div className='texto'>
           <h2>Exemplo de texto</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Corrupti porro quis.</p>
         </div>
     </div>
   )

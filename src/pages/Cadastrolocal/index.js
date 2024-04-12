@@ -1,5 +1,5 @@
 import './style.css'
-import { Field, Form, Formik } from 'react-router-dom';
+import { Field, Form, Formik } from 'formik';
 import { initialLocal, useInfoContext } from '../../components/context/PostContext';
 
 const CadastroLocal = () => {
@@ -46,44 +46,44 @@ const CadastroLocal = () => {
           </div>
 
           <div className='campoArea'>
-            <Field>
-              <label>Nome do Local</label>
-              <input className='inputArea' type='text' name='nomeLocal' id='nomeLocal' value={setFormLocal.nomeLocal} />
+            <Field className='inputField' type='text' name='nomeLocal' id='nomeLocal' placeHolder="Digite o nome do local">
+              {/* <label>Nome do Local</label> */}
+              {/* <input className='inputArea' type='text' name='nomeLocal' id='nomeLocal' /> */}
             </Field>
           </div>
 
           <div className='campoArea'>
-            <Field>
-              <label>Nome da rua</label>
-              <input className='inputArea' type='text' name='endereco' id='endereco' value={setFormLocal.endereco} />
+            <Field className='inputField' type='endereco' name='endereco' id='endereco' placeHolder="Digite o endereço do local">
+              {/* <label>Nome da rua</label>
+              <input className='inputArea' type='text' name='endereco' id='endereco' /> */}
             </Field>
           </div>
 
           <div className='campoArea'>
-            <Field>
-              <label>CEP</label>
-              <input className='inputArea' type='text' maxLength={8} name='cep' id='cep' value={setFormLocal.cep} />
+            <Field className='inputField' type='text' maxLength={8} name='cep' id='cep' placeHolder="Digite o CEP do local">
+              {/* <label>CEP</label>
+              <input className='inputArea' type='text' maxLength={8} name='cep' id='cep'  /> */}
             </Field>
           </div>
 
           <div className='campoArea'>
-            <Field>
-              <label>Valor de locação</label>
-              <input className='inputArea' type='text' name='valor' id='valor' value={setFormLocal.valor} />
+            <Field className='inputField' type='text' name='valor' id='valor' placeHolder="Digite o valor do local">
+              {/* <label>Valor de locação</label>
+              <input className='inputArea' type='text' name='valor' id='valor'  /> */}
             </Field>
           </div>
 
           <div className='campoArea'>
-            <Field>
-              <label>Caracteristicas que o local possui</label>
-              <input className='inputArea' type='text' name='carac' id='carac' value={setFormLocal.carac} />
+            <Field className='inputField' type='text' name='carac' id='carac' placeHolder="Digite as características do local">
+              {/* <label>Caracteristicas que o local possui</label>
+              <input className='inputArea' type='text' name='carac' id='carac'  /> */}
             </Field>
           </div>
 
           <div className='campoArea'>
-            <Field>
-              <label>Descrição</label>
-              <input className='inputArea' type='text' name='descr' id='descr' value={setFormLocal.descr} />
+            <Field className='inputField' type='text' name='descr' id='descr' placeHolder="Digite a descrição do local">
+              {/* <label>Descrição</label>
+              <input className='inputArea' type='text' name='descr' id='descr'  /> */}
             </Field>
           </div>
 

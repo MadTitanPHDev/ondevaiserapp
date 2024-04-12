@@ -1,15 +1,16 @@
 import './styles.css';
 import imagem from './imagemondevaiser.png'
-import { Field, Form, Formik } from 'react-router-dom';
+import { Field, Form, Formik } from 'formik';
 import { initialUsuario, useInfoContext } from '../../components/context/PostContext';
+import Layout from '../../components/Layout';
 
 const Cadastro = () => {
  
     const {users, addUser} = useInfoContext();
 
   return (  
-
-    <Formik
+    <Layout>
+<Formik
         initialValues={initialUsuario}
         onSubmit={(values, actions) => {
             const newUser = 
@@ -30,8 +31,8 @@ const Cadastro = () => {
             )
         }}
     >
-
-       <section className='container'>
+        {({setValues}) => (
+            <section className='container'>
             <img src={imagem}></img>
             
             <div>
@@ -43,49 +44,49 @@ const Cadastro = () => {
             <div className='formArea'>
                 <Form>
                     <div className='campoArea'>
-                        <Field>
-                            <label>Nome</label>
-                            <input className='inputArea' type='text' name='nome' id='nome' value={formDados.nome} />
+                        <Field className='inputField' type='text' name='nome' id='nome' placeHolder="Digite o nome">
+                            {/* <label>Nome</label>
+                            <input className='inputArea' type='text' name='nome' id='nome' /> */}
                         </Field>
                     </div>
     
                     <div className='campoArea'>
-                        <Field>
-                            <label>Nome de Usuário</label>
-                            <input className='inputArea' type='text' name='nick' id='nick' value={formDados.nick} />
+                        <Field className='inputField' type='text' name='nick' id='nick' placeHolder='Digite um nome de usuário'>
+                            {/* <label>Nome de Usuário</label>
+                            <input className='inputArea' type='text' name='nick' id='nick' /> */}
                         </Field>
                     </div>
 
                     <div className='campoArea'>
-                        <Field>
-                            <label>CPF</label>
-                            <input className='inputArea' type='text' name='cpf' id='cpf' value={formDados.cpf} />
+                        <Field className='inputField' mask="999.999.999-99" type='cpf' name='cpf' id='cpf' placeHolder='Digite o CPF'>
+                            {/* <label>CPF</label>
+                            <input className='inputArea' type='text' name='cpf' id='cpf' /> */}
                         </Field>
                     </div>
     
                     <div className='campoArea'>
-                        <Field>
-                            <label>Email</label>
-                            <input className='inputArea' type='email' name='email' id='email' value={formDados.email} />
+                        <Field className='inputField' type='email' name='email' id='email' placeHolder='Digite o email'>
+                            {/* <label>Email</label>
+                            <input className='inputArea' type='email' name='email' id='email' /> */}
                         </Field>
                     </div>
     
                     <div className='campoArea'>
-                        <Field>
-                            <label>Senha</label>
-                            <input className='inputArea' type='password' name='password' id='password' value={formDados.password} />
+                        <Field className='inputField' type='password' name='senha' id='senha' placeHolder='Digite uma senha'>
+                            {/* <label>Senha</label>
+                            <input className='inputArea' type='password' name='password' id='password' /> */}
                         </Field>
                     </div>
     
                     <div className='campoArea'>
-                        <Field>
-                            <label>Numero de telefone com WhatsApp</label>
-                            <input className='inputArea' type='number' name='number' maxLength={11} id='number' value={formDados.number} />
+                        <Field className='inputField' mask="(99)99999-9999" type='phone' name='telefone' maxLength={11} id='telefone' placeHolder='Digite o telefone'>
+                            {/* <label>Numero de telefone com WhatsApp</label>
+                            <input className='inputArea' type='number' name='number' maxLength={11} id='number' /> */}
                         </Field>
                     </div>
                         
                     <div className='btncampos'>
-                        <input className='buttonCampo' type='submit' value='Limpar campos' />
+                        <button className='buttonCampo' onClick={() => setValues(initialUsuario)} value='Limpar campos'></button>
                     </div>
     
                     <div className='btnArea'>
@@ -96,7 +97,11 @@ const Cadastro = () => {
             </div>
             
         </section>
+        )}
+       
     </Formik>
+    </Layout>
+    
   )
 }
 

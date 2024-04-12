@@ -6,7 +6,7 @@ import mapa from './images/mapa.png'
 import comentarios from './images/comentarios.jpg'
 import Layout from '../../components/Layout'
 
-const Recantodospassaros = () => {
+const MaisInformacoes = () => {
     return (
         <section className='container'>
             <Layout>
@@ -71,7 +71,7 @@ const Recantodospassaros = () => {
     )
 }
 
-export default Recantodospassaros
+export default MaisInformacoes
 
 
 

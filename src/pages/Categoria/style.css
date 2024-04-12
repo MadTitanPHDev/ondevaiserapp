@@ -1,0 +1,205 @@
+.container
+{
+    height: 195vh;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.buscaArea
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.buscaAreaIcone
+{
+    position: relative;
+}
+
+.rowArea
+{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+}
+
+#barradebusca
+{
+    background-color:transparent;
+    padding-left:7px;
+    font-style:italic;
+    font-size:12px;
+    border:solid 1px #929292;
+    border-radius: 25px;
+    height:50px;
+    width:230px;
+    margin-bottom: 10px;
+}
+
+.iconsArea 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cardArea 
+{
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+a:link
+{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover 
+{
+    text-decoration: underline;
+}
+
+.cardtexto
+{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 10px;
+}
+
+.cardtexto2
+{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    position: absolute;
+    margin-top: 465px;
+    margin-left: 10px;
+}
+
+.cardtexto3
+{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+    position: absolute;
+    margin-top: 530px;
+    margin-left: 10px;
+}
+
+.nota
+{
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+    margin-left: 335px;
+    margin-bottom: -15px;
+}
+
+.star 
+{
+    margin-left: 320px;
+    margin-bottom: -15px;
+    width: 12px;
+}
+
+.nota
+{
+    font-size: 14px;
+}
+
+.letraMaior
+{
+    font-size: 18px;
+}
+
+.letraMenor
+{
+    font-size: 15px;
+}
+
+.heart
+{
+    width: 50%;
+    position: relative;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 300px;
+    margin-left: 210px;
+    color: cornsilk;
+}
+
+.cardContent 
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-image: url(./../../assets/images/Chácara\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    padding: 30px;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.cardContent2 
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-image: url(./../../assets/images/Chácara\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    padding: 30px;
+    align-items: flex-end;
+    margin-top: 90px;
+}
+
+.cardContent3
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-image: url(./../../assets/images/Chácara\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px;
+    justify-content: center;
+    padding: 30px;
+    align-items: flex-end;
+    margin-top: 160px;
+}

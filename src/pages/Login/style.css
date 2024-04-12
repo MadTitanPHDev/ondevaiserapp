@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loginBody {
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #f8f3eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+
+.loginInputArea, .passArea {
+    font-size: 1.25rem;
+    position: relative;
+    --primary: #b3b792;
+    margin: 20px;
+}
+
+
+
+.inputLogin, .inputSenha {
+    all: unset;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loginLabel, .senhaLabel {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #809671;
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.inputLogin:focus{
+    border: 1px solid var(--primary);
+}
+
+.inputLogin:is(:focus, :valid) ~ .loginLabel{
+    transform: translateY(-120%) scale(0.7);
+    background-color: #f8f3eb;
+    padding-inline: 0.3rem;
+    color: var(--primary);
+}
+
+
+.inputSenha:focus{
+    border: 1px solid var(--primary);
+}
+
+.inputSenha:is(:focus, :valid) ~ .senhaLabel{
+    transform: translateY(-120%) scale(0.7);
+    background-color: #f8f3eb;
+    padding-inline: 0.3rem;
+    color: var(--primary);
+}
+
+
+/* botao */
+
+.btnLogin {
+    all: unset;
+}
+
+.btnLogin {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 26px;
+    background-color: #f8f3eb;
+    border: 2px solid #d2ab80;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .btnLogin::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #d2ab80;
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
+  }
+  
+  .btnLogin:hover::after {
+    translate: 0;
+  }
+  .btnLogin:hover {
+    background-color: #d2ab80;
+    color: #f8f3eb;
+  }
+
+  /* esqSenha */
+
+  .esqSenhaArea {
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 10px 0 15px;
+    font-size: 0.9em;
+    color: #809671;
+  }
+  .esqSenhaArea label:nth-child(2) {
+    order: 1;
+  }
+  .esqSenhaArea label {
+    display: flex;
+    align-items: center;
+  }
+  .esqSenhaArea label input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  .esqSenhaArea label a {
+    color: #809671;
+    text-decoration: none;
+  }
+  .esqSenhaArea label a:hover {
+    text-decoration: underline;
+  }

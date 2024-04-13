@@ -69,7 +69,7 @@ const PerfilUsuario = () => {
                             <p><strong>Avaliação:</strong>5.0</p>
                         </div>
 
-                        <a href='http://localhost:3000/categoria'><button className='button' id='button'>Editar</button></a>
+                        <a href='http://localhost:3000/categoria'><button className='buttonPerfilUsuario' id='buttonPerfilUsuario'>Editar</button></a>
 
                         <div className='avaliacaoComent'>
 

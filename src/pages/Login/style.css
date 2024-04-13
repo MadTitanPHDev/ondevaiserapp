@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
-*,
+/* *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-.loginBody {
+.loginBodyArea {
     font-family: Inter, sans-serif;
-    height: 100vh;
+    height: 45vh;
+    width: 70vw;
     background-color: #f8f3eb;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 1;
+    
   }
 
 .loginInputArea, .passArea {
@@ -113,10 +114,10 @@
   .esqSenhaArea {
     display: flex;
     justify-content: space-between;
-    
     margin: 10px 0 15px;
     font-size: 0.9em;
     color: #809671;
+    flex: 1;
   }
   .esqSenhaArea label:nth-child(2) {
     order: 1;

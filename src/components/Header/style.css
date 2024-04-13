@@ -86,7 +86,7 @@
    box-sizing: border-box;
  } */
  
- a {
+ .aHeader {
    text-decoration: none;
  }
 
@@ -95,7 +95,7 @@
 }
  
  
- .navbar {
+ .navbarHeader {
    height: 200px;
    background-color: #f8f3eb;
    padding: 20px 40px;
@@ -105,40 +105,41 @@
    width: 100vw;
  }
  
- .navbar .logo i {
+ .navbarHeader .logo i {
    color: #0aa5ff;
    font-size: 22px;
  }
  
- .navbar .logo a {
+ .navbarHeader .logo a {
    font-size: 24px;
    font-weight: 700;
    color: white;
    margin-left: 12px;
  }
  
- .menu {
+ .menuHeader {
    display: flex;
    align-items: center;
+   justify-content: center;
    gap: 32px;
  }
  
- .menu-links {
+ .menu-links-Header {
    display: flex;
    gap: 24px;
-   border-right: 1px solid #999999;
+   /* border-right: 1px solid #999999; */
    padding-inline: 24px;
  }
  
- .menu-links a {
+ .menu-links-Header a {
    font-weight: 500;
    color: #999999;
    padding: 8px 16px;
  }
- .menu-links a:hover {
+ .menu-links-Header a:hover {
    color: white;
  }
- .log-in {
+ .btnLoginHeader{
    font-weight: 500;
    padding: 12px 22px;
    background-color: transparent;
@@ -146,8 +147,9 @@
    border-radius: 10px;
    border: 2px solid #0aa5ff;
    transition: 0.2s;
+   font-size: 30px;
  }
- .log-in:hover {
+ .btnLoginHeader:hover {
    background-color: #0aa5ff;
    color: white;
  }
@@ -160,7 +162,7 @@
  }
  
  @media (max-width: 53rem) {
-   .menu {
+   .menuHeader {
      display: none;
    }
  

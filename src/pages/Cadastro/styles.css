@@ -1,34 +1,32 @@
-img{
-    display: block; /* Torna a imagem um elemento de bloco */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto;
-    border-color: black;
-}
- 
+
  
 .dados{
-    
     font-size: 20px;
     color: black;
     border-color: black;
     border-width:3px ;
-    text-align: center; 
+    text-align: center;
+    margin-top: 10px;
 }
  
-.cadastroAreaTotal {
+.cadastroContainer {
     background-color: white;
 }
  
-.inputArea {
-    border: 1px solid #ccc;
-    height: 35px;
-    padding-left: 6px;
-    color: #00f;
-    font-weight: 700;
-    border-color: black;
-    border-radius: 50px;
+.inputField
+{
+    font-size: 1.15rem;
+    position: relative;
+    --primary: #b3b792;
+    margin: 8px;
+    all: unset;
+    color: #809671;
+    padding: 1rem;
+    border: 2px solid #d2ab80;
+    border-radius: 10px;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+
 .campoArea {
     display: flex;
     flex-direction: column;
@@ -37,76 +35,67 @@ img{
     border-radius: 50px;
 }
  
-.formCadastroArea {
+.formArea {
+    width: 420px;
+    height: auto;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
-   
+    border-radius: 10px;
+    padding: 24px;
 }
  
-.content {
-    display: flex;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid #ccc;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-   
-}
- 
-.buttonCampo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    display: flex;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid black;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 0, 0.301);
-    width: 150px; /* Define a largura do botão */
-    height: 20px; /* Define a altura do botão */
-    display: block; /* Para utilizar margin: auto; */
-    margin: 0 auto;
-   
-}
-.buttonArea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    display: flex;
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid black;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 0, 0.301);
-   
-}
- 
-.btnArea
+.form
 {
-    margin-top: 20px;
-}
- 
-.btncampos
-{
-    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 6px;
 }
 
+.btnAreaCadastro
+{
+  display: flex;
+  width: 100%;
+}
 
+.btnCadastro {
+    all: unset;
+}
+
+.btnCadastro {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 26px;
+    background-color: #f8f3eb;
+    border: 2px solid #d2ab80;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+  }
+  
+  .btnbtnCadastro::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #d2ab80;
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
+  }
+  
+  .btnbtnCadastro:hover::after {
+    translate: 0;
+  }
+  .btnCadastro:hover {
+    background-color: #d2ab80;
+    color: #f8f3eb;
+  }
+
+ 

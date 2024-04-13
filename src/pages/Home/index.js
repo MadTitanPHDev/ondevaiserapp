@@ -9,14 +9,12 @@ import Card from '../../components/Card';
 const Home = () => {
   return (
     // <div className='container'>
-      <Layout>
+    <Layout>
       <div className='homeArea'>
-      <Card imgsrc={img1Card} />
-      <Card imgsrc={img2Card} />
-      <Card imgsrc={img3Card} />
+        <Card imgsrc={img1Card} />
       </div>
-      </Layout>
-      
+    </Layout>
+
     // </div>
 
   )

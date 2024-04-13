@@ -43,24 +43,25 @@ const Header = () => {
         // </header>
 
         <header>
-            <nav class="navbar">
+            <nav class="navbarHeader">
                 <div class="logo">
                     <i class="fa-solid fa-font-awesome"></i>
                     <a href='/'><img className='logoHeaderImg' src={LogoOndeVaiSer}></img></a>
                     {/* <a className='logoHeaderImg' href="../../assets/images/LogoOndeVaiSer.png"></a> */}
                 </div>
-                <div class="menu">
-                    <div class="menu-links">
-                        <a href="/">Home</a>
-                        <a href="/Cadastro">Cadastre-se</a>
-                        <a href="/Sobre">Sobre nós</a>
-                        <a href="/">Contato</a>
+                <div class="menuHeader">
+                    <div class="menu-links-Header">
+                        <a className='aHeader' href="/">Home</a>
+                        <a className='aHeader' href="/Cadastro">Cadastre-se</a>
+                        <a className='aHeader' href="/Sobre">Sobre nós</a>
+                        <a className='aHeader' href="/">Contato</a>
                     </div>
-                    <button class="log-in">Log In</button>
-                    
+                    <a href='/Login'>
+                    <button class="btnLoginHeader">Entrar</button>
+                    </a>
                 </div>
                 <div class="menu-btn">
-                    <i class="fa-solid fa-bars"><FaBars size='2em'/></i>
+                    <i class="fa-solid fa-bars"><FaBars size='2em' /></i>
                 </div>
             </nav>
         </header>

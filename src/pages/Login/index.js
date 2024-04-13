@@ -8,6 +8,9 @@ const Login = () => {
             <div className='loginBody'>
 
                 <div className='loginBodyArea'>
+                    <diiv className='loginTxtArea'>
+                        <h1 className='loginTxt'>Boas vindas novamente!</h1>
+                    </diiv>
                     <div className='loginInputArea'>
                         <input className='inputLogin' required autocomplete="off" type="text" name="username" id="username" />
                         <label className='loginLabel' for='username'>Email</label>
@@ -20,7 +23,6 @@ const Login = () => {
 
                     <div class="esqSenhaArea">
                         <label>
-
                             <input type='checkbox'></input>
                             Lembre de mim.
                         </label>
@@ -29,10 +31,14 @@ const Login = () => {
                         </label>
                     </div>
 
-                    <div className='btnArea'>
-                        <button className='btnLogin'>
+                    <div className='btnAreaLogin'>
+                        <a href='/'>
+                        {/* <button className='btnLogin'>
                             Entrar
-                        </button>
+                        </button> */}
+                        <button className='btnLogin' onclick="history.back()">Entrar</button>
+                        </a>
+                        
                     </div>
                 </div>
 

@@ -5,13 +5,13 @@ import { FaMugHot, FaRegHeart, FaSearch, FaStar, FaTree, FaWarehouse } from 'rea
 
 const Categoria = () => {
   return (
-    <div className='container'>
+    
         <Layout>
-            <section>
-                <div className='content'>
+            
+                <div className='contentCat'>
                     <div className='buscaArea'>
                         <div className='buscaAreaIcone'>
-                            <FaSearch className='search'/>
+                            <FaSearch className='searchCat'/>
                         </div>
                        
                         <input type='search' id='barradebusca' placeholder= 'Procure qualquer lugar - Hospedes?'></input>
@@ -29,8 +29,8 @@ const Categoria = () => {
                         <a href='../../pages/Categoria' className='titulo'><p>Casa de Festas</p></a>
                     </div>
 
-                    <div className="cardArea">
-                        <a  className="cardContent">
+                    <div className="cardAreaCat">
+                        <a  className="cardContentCat">
                             <div className='cardCoracao'>
                                 <FaRegHeart className='heart'/>
                             </div>
@@ -49,8 +49,8 @@ const Categoria = () => {
                         </div>
                     </div>
 
-                    <div className="cardArea">
-                        <a  className="cardContent2">
+                    <div className="cardAreaCat">
+                        <a  className="cardContentCat2">
                             <div className='cardCoracao'>
                                 <FaRegHeart className='heart'/>
                             </div>
@@ -68,8 +68,8 @@ const Categoria = () => {
                         </div>
                     </div>
                     
-                    <div className="cardArea">
-                        <a  className="cardContent3">
+                    <div className="cardAreaCat">
+                        <a  className="cardContentCat3">
                             <div className='cardCoracao'>
                                 <FaRegHeart className='heart'/>
                             </div>
@@ -88,9 +88,9 @@ const Categoria = () => {
                     </div>
 
                 </div>
-            </section>
+            
         </Layout>
-    </div>
+    
   )
 }
 

@@ -7,14 +7,13 @@ const Categoria = () => {
     return (
 
         <Layout>
-
             <div className='contentCat'>
                 <div className='buscaArea'>
                     <div className='buscaAreaIcone'>
                         <FaSearch className='searchCat' />
                     </div>
 
-                    <input type='search' id='barradebusca' placeholder='Procure qualquer lugar - Hospedes?'></input>
+                    <input type='search' id='barradebusca' placeholder='Procura algo especifico?'></input>
                 </div>
 
                 <div className='rowArea'>
@@ -30,6 +29,7 @@ const Categoria = () => {
                 </div>
 
                 <div className='categoriaContent'>
+
                     <div className="cardAreaCat">
 
                         <a className="cardContentCat" href='/MaisInformacoes'></a>
@@ -46,10 +46,87 @@ const Categoria = () => {
                         </div>
                     </div>
 
+                    <div className="cardAreaCat">
+
+                        <a className="cardContentCat" href='/MaisInformacoes'></a>
+                        <div className="cardtexto">
+                            <FaStar className='star' /> <p className='nota'>4,8</p>
+                            <a href='../../pages/Categoria'>
+                                <p className='letraMaior'>Casa de laser</p>
+                            </a>
+                            <div className='letraMenor'>
+                                <p>2 km de disntância</p>
+                                <p>10 de dez</p>
+                                <p>R$350,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="cardAreaCat">
+
+                        <a className="cardContentCat" href='/MaisInformacoes'></a>
+                        <div className="cardtexto">
+                            <FaStar className='star' /> <p className='nota'>4,8</p>
+                            <a href='../../pages/Categoria'>
+                                <p className='letraMaior'>Casa de laser</p>
+                            </a>
+                            <div className='letraMenor'>
+                                <p>2 km de disntância</p>
+                                <p>10 de dez</p>
+                                <p>R$350,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="cardAreaCat">
+
+                        <a className="cardContentCat" href='/MaisInformacoes'></a>
+                        <div className="cardtexto">
+                            <FaStar className='star' /> <p className='nota'>4,8</p>
+                            <a href='../../pages/Categoria'>
+                                <p className='letraMaior'>Casa de laser</p>
+                            </a>
+                            <div className='letraMenor'>
+                                <p>2 km de disntância</p>
+                                <p>10 de dez</p>
+                                <p>R$350,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="cardAreaCat">
+
+                        <a className="cardContentCat" href='/MaisInformacoes'></a>
+                        <div className="cardtexto">
+                            <FaStar className='star' /> <p className='nota'>4,8</p>
+                            <a href='../../pages/Categoria'>
+                                <p className='letraMaior'>Casa de laser</p>
+                            </a>
+                            <div className='letraMenor'>
+                                <p>2 km de disntância</p>
+                                <p>10 de dez</p>
+                                <p>R$350,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="cardAreaCat">
+
+                        <a className="cardContentCat" href='/MaisInformacoes'></a>
+                        <div className="cardtexto">
+                            <FaStar className='star' /> <p className='nota'>4,8</p>
+                            <a href='../../pages/Categoria'>
+                                <p className='letraMaior'>Casa de laser</p>
+                            </a>
+                            <div className='letraMenor'>
+                                <p>2 km de disntância</p>
+                                <p>10 de dez</p>
+                                <p>R$350,00</p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-
-
             </div>
 
         </Layout>

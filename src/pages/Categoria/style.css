@@ -3,9 +3,9 @@
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    height: 100%;
+    height: 100vh;
     flex: 1;
 }
 
@@ -26,7 +26,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 #barradebusca
@@ -55,6 +55,7 @@
     width: 400px;
     height: 400px;
     display: flex;
+    flex-direction: column;
 }
 
 .titulo:link
@@ -110,24 +111,22 @@
 .categoriaContent {
     display: grid;
     width: 100%;
-    max-width: 1000px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 100px;
 }
 
 .cardContentCat 
 {
-    width: 90%;
-    height: 90%;
+    width: 600px;
+    height: 400px;
     display: flex;
     background-image: url(./../../assets/images/casaF/Capa.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(145, 145, 145);
     margin: 10px;
-    justify-content: center;
-    padding: 30px;
-    align-items: flex-end;
-    margin-top: 20px;
+    
+    
 }

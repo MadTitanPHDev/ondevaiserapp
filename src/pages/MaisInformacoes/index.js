@@ -15,59 +15,7 @@ const MaisInformacoes = () => {
 
         <section className='maisInfoArea'>
             <Layout>
-                {/* <h1 className='tituloLocal'>Recanto dos Pássaros</h1>
-                <img src={imagem} className='foto' />
-                <div >
-                    <div className='map'>
-                        <FaStar />
-                        <p>Nota geral de hospedes: 4.8</p>
-                    </div>
-                    <div className='map'>
-                        <FaPeopleCarry />
-                        <p>Capacidade: 200 pessoas</p>
-                        <p>Categoria: Chácara</p>
-                    </div>
-
-                    <div className='map'>
-                        <FaMap />
-                        <p>Estado: São Paulo</p>
-                    </div>
-
-                    <div className='map'>
-                        <FaSearchLocation />
-                        <p>Cidade: Presidente Prudente</p>
-                    </div>
-
-                    <div className='map'>
-                        <FaMapPin />
-                        <p>Bairro: Vila Nova</p>
-                    </div>
-
-
-                    <div className='map'>
-                        <FaWhatsapp />
-                        <p>Entre em contato: (18)988521421</p>
-                    </div>
-                    <div className='map'>
-                        <FaLocationArrow />
-                        <p>Endereço: Manoel José nº654</p>
-                    </div>
-                    <img className='localiza' src={mapa} />
-
-                    <div className='map'>
-                        <FaStar />
-                        <p>4.8 Avaliaçao</p>
-                    </div>
-                    <div className='avalia'>
-                        <FaComment />
-                        <p>378 Comentários</p>
-                    </div>
-
-                    <div>
-                        <img src={comentarios} className='comentarios' />
-                    </div>
-                </div> */}
-
+                
                 <div className='carrossel1'>
                     <h1>Meu Carrossel de Imagens</h1>
                     <ImageCarousel />

@@ -18,15 +18,16 @@ const Card = ({ imgsrc }) => {
     //   </div>
     // </div>
 
-    <div class="card">
-      <div class="image-box">
-        <img className='imgBox' src={imgsrc} />
-      </div>
-      <div class="textoCard">
-        <h2>Casas de Lazer</h2>
-        <p>Quer uma festa em um ambiente urbano? Essa é a sua categoria de escolha!</p>
-      </div>
-    </div>
+    <a href='/Categoria' class="card"> 
+        <div class="image-box">
+          <img className='imgBox' src={imgsrc} />
+        </div>
+        <div class="textoCard">
+          <h2>Casas de Lazer</h2>
+          <p>Quer uma festa em um ambiente urbano? Essa é a sua categoria de escolha!</p>
+        </div>
+      
+    </a>
   )
 }
 

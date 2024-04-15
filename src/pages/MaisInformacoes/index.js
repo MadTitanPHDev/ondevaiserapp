@@ -5,18 +5,22 @@ import { FaComment, FaLocationArrow, FaMandalorian, FaMap, FaMapPin, FaPeopleArr
 import mapa from './images/mapa.png'
 import comentarios from './images/comentarios.jpg'
 import Layout from '../../components/Layout'
+import Swiper from 'swiper'
+
+import ImageCarousel from '../../components/Carrousel/carousel'
 
 const MaisInformacoes = () => {
+
     return (
+
         <section className='maisInfoArea'>
             <Layout>
-                <h1 className='tituloLocal'>Recanto dos Pássaros</h1>
+                {/* <h1 className='tituloLocal'>Recanto dos Pássaros</h1>
                 <img src={imagem} className='foto' />
-
                 <div >
                     <div className='map'>
                         <FaStar />
-                        <p>4.8</p>
+                        <p>Nota geral de hospedes: 4.8</p>
                     </div>
                     <div className='map'>
                         <FaPeopleCarry />
@@ -62,6 +66,11 @@ const MaisInformacoes = () => {
                     <div>
                         <img src={comentarios} className='comentarios' />
                     </div>
+                </div> */}
+
+                <div className='carrossel1'>
+                    <h1>Meu Carrossel de Imagens</h1>
+                    <ImageCarousel />
                 </div>
 
             </Layout>

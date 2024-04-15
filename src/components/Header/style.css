@@ -96,7 +96,7 @@
  
  
  .navbarHeader {
-   height: 200px;
+   height: 140px;
    background-color: #f8f3eb;
    padding: 20px 40px;
    display: flex;
@@ -106,7 +106,7 @@
  }
  
  .navbarHeader .logo i {
-   color: #0aa5ff;
+   color: #d2ab80;
    font-size: 22px;
  }
  
@@ -145,12 +145,12 @@
    background-color: transparent;
    color: #999999;
    border-radius: 10px;
-   border: 2px solid #0aa5ff;
+   border: 2px solid #d2ab80;
    transition: 0.2s;
    font-size: 30px;
  }
  .btnLoginHeader:hover {
-   background-color: #0aa5ff;
+   background-color: #d2ab80;
    color: white;
  }
  

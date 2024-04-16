@@ -1,7 +1,7 @@
 .footerAreaTotal{
     background-color: #f8f3eb;
     width: 100vw;
-    height: 280px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,16 +15,113 @@ h1, h3{
     font-weight: 400;
 }
 
-.footerIconRedes{
+/* .footerIconRedes{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     flex: 1;
+} */
+
+/* .iconF, .iconI, .iconX{
+    margin: 20px;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+  background-color: rgb(34, 34, 33);
+} */
+
+.footerIconRedes {
+  display: inline-flex;
+  list-style: none;
 }
 
-.iconF, .iconI, .iconX{
-    margin: 20px;
+.footerIconRedes .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footerIconRedes .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footerIconRedes .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footerIconRedes .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.footerIconRedes .icon:hover span,
+.footerIconRedes .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.facebook {
+  --color: #1877f2;
+}
+.twitter {
+  --color: #0e0e0e;
+}
+.instagram {
+  --color: #e4405f;
+}
+.tiktok {
+  --color: #333333;
+}
+.youtube {
+  --color: #cd201f;
+}
+
+.icon:hover,
+.icon:hover .tooltip,
+.icon:hover .tooltip::before {
+  background: var(--color);
+  color: white;
 }
 
 

@@ -1,15 +1,12 @@
-/* .container
-{
-    height: 195vh;
-} */
 
-.content
+.contentCat
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    padding: 15px;
+    height: 800px;
+    flex: 1;
 }
 
 .buscaArea
@@ -22,10 +19,6 @@
     margin-top: 15px;
 }
 
-.buscaAreaIcone
-{
-    position: relative;
-}
 
 .rowArea
 {
@@ -33,7 +26,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5px;
+    /* margin: 5px; */
 }
 
 #barradebusca
@@ -57,23 +50,20 @@
     
 }
 
-.cardArea 
+.cardAreaCat 
 {
     width: 400px;
     height: 400px;
     display: flex;
+    flex-direction: column;
 }
 
-a:link
+.titulo:link
 {
     text-decoration: none;
     color: #000;
 }
 
-a:hover 
-{
-    text-decoration: underline;
-}
 
 .cardtexto
 {
@@ -84,30 +74,6 @@ a:hover
     width: 400px;
     position: absolute;
     margin-top: 390px;
-    margin-left: 10px;
-}
-
-.cardtexto2
-{
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 400px;
-    position: absolute;
-    margin-top: 465px;
-    margin-left: 10px;
-}
-
-.cardtexto3
-{
-    display: flex;
-    justify-content: left;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 400px;
-    position: absolute;
-    margin-top: 530px;
     margin-left: 10px;
 }
 
@@ -142,64 +108,25 @@ a:hover
     font-size: 15px;
 }
 
-.heart
-{
-    width: 50%;
-    position: relative;
-    justify-content: right;
-    align-items: center;
-    margin-bottom: 300px;
-    margin-left: 210px;
-    color: cornsilk;
+.categoriaContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cria duas colunas de igual tamanho */
+    grid-gap: 10px;
+    /* Espaçamento entre as imagens */
 }
 
-.cardContent 
+.cardContentCat 
 {
-    width: 90%;
-    height: 90%;
+    width: 500px;
+    height: 400px;
     display: flex;
-    background-image: url(./../../assets/images/Chácara\ 1.jpg);
+    background-image: url(./../../assets/images/casaF/Capa.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(145, 145, 145);
     margin: 10px;
-    justify-content: center;
-    padding: 30px;
-    align-items: flex-end;
-    margin-top: 20px;
-}
-
-.cardContent2 
-{
-    width: 90%;
-    height: 90%;
-    display: flex;
-    background-image: url(./../../assets/images/Chácara\ 2.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin: 10px;
-    justify-content: center;
-    padding: 30px;
-    align-items: flex-end;
-    margin-top: 90px;
-}
-
-.cardContent3
-{
-    width: 90%;
-    height: 90%;
-    display: flex;
-    background-image: url(./../../assets/images/Chácara\ 3.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    border: 1px solid black;
-    margin: 10px;
-    justify-content: center;
-    padding: 30px;
-    align-items: flex-end;
-    margin-top: 160px;
+    
+    
 }

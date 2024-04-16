@@ -152,7 +152,10 @@
     margin-left: 100px;
 }
 
-/* button
+
+
+.buttonPerfilUsuario
+
 {
     font-size: 16px;
     border: solid 1px black;
@@ -166,9 +169,9 @@
     align-items: center;
     margin-left: 270px;
     margin-top: 70px;
-} */
+} 
 
-.button:hover
+.buttonPerfilUsuario:hover
 {
     color: blue;
 }

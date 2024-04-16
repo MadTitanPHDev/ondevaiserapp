@@ -5,7 +5,7 @@
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    height: 100vh;
+    height: 800px;
     flex: 1;
 }
 
@@ -110,15 +110,15 @@
 
 .categoriaContent {
     display: grid;
-    width: 100%;
-    max-width: 1200px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 100px;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cria duas colunas de igual tamanho */
+    grid-gap: 10px;
+    /* Espaçamento entre as imagens */
 }
 
 .cardContentCat 
 {
-    width: 600px;
+    width: 500px;
     height: 400px;
     display: flex;
     background-image: url(./../../assets/images/casaF/Capa.jpeg);

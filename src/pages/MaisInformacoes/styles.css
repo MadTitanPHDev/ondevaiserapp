@@ -1,85 +1,124 @@
-  .foto {
-    width: 570px;
-    height: 310px;
-    border-radius: 10px;
-    border-width: 1px;
-    border-color: #2DD7EB;
-    border-style: solid;
-  }
-
-  .tituloLocal {
-    font-size: 30px;
-    color: #676D32;
-    border-color: black;
-    border-width: 3px;
-    text-align: center;
-
-
-  }
-
-  .map {
+.bodyMaisInf {
     display: flex;
-    flex-direction: row;
-
-    margin-left: 800px;
-    line-height: 1.5;
+    height: 80%;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-  }
+.imgMaisInf {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Cria duas colunas de igual tamanho */
+    grid-gap: 10px;
+    /* Espaçamento entre as imagens */
+}
 
-  .localiza {
-    max-height: 300px;
-    flex-direction: row;
+.imgMaisInf img {
+    height: 300px;
     width: 500px;
-    border-radius: 50px;
+    margin: 10px;
+
+}
+
+.basicInfo {
     display: flex;
+    width: 600px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.pBasifInfo {
     font-size: 20px;
-    margin-left: 650px;
-    line-height: 1.5;
-    border-width: 3px;
-    border-color: #2DD7EB;
-    border-style: solid;
+    text-shadow: 1px;
+}
 
-  }
-
-  .avalia {
+.descrInfoArea {
     display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    margin-left: 650px;
-    line-height: 1.5;
-    margin-left: 800px;
+    height: 400px;
+    width: 800px;
+    /* background-color: aqua; */
 
-  }
+}
 
-  .comentarios {
-    max-height: 300px;
-    flex-direction: row;
-    width: 500px;
-    border-radius: 50px;
+.caracInfoArea {
     display: flex;
-    font-size: 20px;
-    margin-left: 650px;
-    line-height: 1.5;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 39px;
+}
 
-  }
+.caracInfoArea li {
+    list-style-type: disc;
+}
 
-  .container {
+.descrTxtArea {
     display: flex;
-    
-    color: #676D32;
-  }
+    padding: 20px;
+}
 
-  .sala16 {
-    color: aqua;
-    height: 100%;
+.descrTxtArea p {
+    font-size: medium;
+    text-align: justify;
+    text-shadow: 1px;
+}
+
+.ondeInfoArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.mapaInfoArea img {
+    height: 300px;
+}
+
+
+.btnMaisInfo {
+    all: unset;
+}
+
+.btnMaisInfo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 26px;
+    background-color: #f8f3eb;
+    border: 2px solid #d2ab80;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.btnMaisInfo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #d2ab80;
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
+}
+
+.btnMaisInfo:hover::after {
+    translate: 0;
+}
+
+.btnMaisInfo:hover {
+    background-color: #d2ab80;
+    color: #f8f3eb;
+}
+
+.comentariosMaisInf {
+    height: 200px;
+
+}
+
+.comentariosMaisInf img {
     width: 100%;
-  }
-
-  .carrossel1 {
-    width: 400px;
-    height: 600px;
-  }
-
-
- 
+    height: 100%;
+}

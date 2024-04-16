@@ -38,8 +38,8 @@
   padding: 8px;
   border-radius: 50px;
 }
-
-/* .formArea {
+/* 
+.formArea {
   width: 420px;
   height: auto;
   display: flex;
@@ -99,4 +99,52 @@
 .btnCadastroLocal:hover {
   background-color: #d2ab80;
   color: #f8f3eb;
+}
+
+.imgArea {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgPreview {
+  height: 100%;
+  object-fit: cover;
+}
+
+.postInfoArea {
+  display: flex;
+  height: 90%;
+  gap: 10px;
+}
+
+.infoImgArea {
+  width: 36%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.infoTextArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoImg {
+  width: 100%;
+  object-fit: cover;
+  /* height: 120px;
+  width: 120px;
+  border-radius: 120px; */
+}
+
+.aBtnCL {
+  text-decoration: none;
+}
+
+.aBtnCL:visited {
+  color: inherit;
 }

@@ -53,6 +53,7 @@ const Header = () => {
                     <div class="menu-links-Header">
                         <a className='aHeader' href="/">Home</a>
                         <a className='aHeader' href="/Cadastro">Cadastre-se</a>
+                        <a className='aHeader' href="/CadastroLocal">Cadastre seu espaço</a>
                         <a className='aHeader' href="/Sobre">Sobre nós</a>
                         <a className='aHeader' href="/">Contato</a>
                     </div>

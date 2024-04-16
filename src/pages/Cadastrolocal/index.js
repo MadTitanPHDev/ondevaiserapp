@@ -14,15 +14,14 @@ const CadastroLocal = () => {
   const handleFileChange = (e) => {
     const file = e.target.files && e.target.files[0];
     const reader = new FileReader();
-    
     reader.onloadend = () => {
-        setPreviewImage(reader.result);
+      setPreviewImage(reader.result);
     };
 
-    if(file) {
-        reader.readAsDataURL(file);
+    if (file) {
+      reader.readAsDataURL(file);
     }
-}
+  }
 
   return (
     <Layout>
@@ -61,9 +60,9 @@ const CadastroLocal = () => {
                   <img src={previewImage} alt='preview' className='imgPreview'></img>
                 }
               </div>
-                {/* <input className='fotosLocal' type="file" id="fotosLocal" name="fotosLocal" /> */}
-              <input className='inputField' type="file" id="fotosLocal" name="fotosLocal" 
-              onChange={(e) => {handleFileChange(e)}} key={fileKey} multiple
+              {/* <input className='fotosLocal' type="file" id="fotosLocal" name="fotosLocal" /> */}
+              <input className='inputField' type="file" id="fotosLocal" name="fotosLocal"
+                onChange={(e) => { handleFileChange(e) }} key={fileKey} 
               >
               </input>
             </div>
@@ -96,7 +95,7 @@ const CadastroLocal = () => {
                 </div>
 
                 <div className='campoArea'>
-                  <InputMask className='inputField' type='valor' onBlur={handleBlur} onChange={handleChange} value={values.valor} mask="R$99999" name='valor' id='valor' placeHolder="Valor">
+                  <InputMask className='inputField' type='valor' onBlur={handleBlur} onChange={handleChange} value={values.valor} mask="R$9999" name='valor' id='valor' placeHolder="Valor">
                     {/* <label>Valor de locação</label>
                     <input className='inputArea' type='text' name='valor' id='valor'  /> */}
                   </InputMask>
@@ -121,7 +120,9 @@ const CadastroLocal = () => {
                 </div>
 
                 <div className='btnAreaCadastroLocal'>
-                  <button className='btnCadastroLocal' type='submit' value='Cadastrar'>Prosseguir</button>
+                  <a className='aBtnCL' href='/MaisInformacoes'>
+                    <button className='btnCadastroLocal' type='submit' value='Cadastrar'>Prosseguir</button>
+                  </a>
                 </div>
               </Form>
             </div>

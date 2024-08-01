@@ -60,6 +60,8 @@
 {
   display: flex;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnCadastro {
@@ -97,3 +99,5 @@
     background-color: #d2ab80;
     color: #f8f3eb;
   }
+
+  

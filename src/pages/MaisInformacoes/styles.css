@@ -113,12 +113,60 @@
     color: #f8f3eb;
 }
 
-.comentariosMaisInf {
+/* .comentariosMaisInf {
     height: 200px;
-
 }
 
 .comentariosMaisInf img {
     width: 100%;
     height: 100%;
+} */
+
+.avaliacaoComent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.avaliacaoComent h1 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: -10px;
+}
+
+.avaliacao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; /* Adiciona espaçamento entre os itens */
+    width: 100%;
+}
+
+.avaliacaoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; /* Ajuste conforme necessário */
+}
+
+.avaliacao img {
+    border: 3px solid #EDEDED;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.avaliacao p {
+    max-width: 150px; /* Correspondente à largura da imagem */
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
 }

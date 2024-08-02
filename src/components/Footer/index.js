@@ -37,8 +37,6 @@ const Footer = () => {
                         </li>
                     </ul>
                     {/* <div className='footerIconRedes'>
-
-
                         <a href='https://www.facebook.com/' target="_blank"><div className='iconF'><FaFacebook size='2em' /></div></a>
                         <a href='https://www.instagram.com/' target="_blank"><div className='iconI'><FaInstagram size='2em' /></div></a>
                         <a href='https://twitter.com/' target="_blank"><div className='iconX'><FaTwitter size='2em' /></div></a>

@@ -22,7 +22,8 @@ const CadastroLocal = () => {
     if(file) {
         reader.readAsDataURL(file);
     }
-}
+  }
+  
   return (
     <Layout>
       <Formik
@@ -63,9 +64,7 @@ const CadastroLocal = () => {
 
                 {/* <input className='fotosLocal' type="file" id="fotosLocal" name="fotosLocal" /> */}
               <input className='inputField' type="file" id="fotosLocal" name="fotosLocal" 
-              onChange={(e) => {handleFileChange(e)}} key={fileKey} multiple
-
-              >
+              onChange={(e) => {handleFileChange(e)}} key={fileKey} multiple>
               </input>
             </div>
 

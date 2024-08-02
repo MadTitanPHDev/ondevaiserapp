@@ -45,10 +45,7 @@ const Login = () => {
 
 
                     </div>
-
-
-                </div>
-                <div className='btnAreaLogin'>
+                    <div className='btnAreaLogin'>
                     <a href='/'>
                         {/* <button className='btnLogin'>
                             Entrar
@@ -56,6 +53,9 @@ const Login = () => {
                         <button className='btnLogin' onclick="history.back()">Entrar</button>
                     </a>
                 </div>
+
+                </div>
+                
 
             </div>
         </Layout>

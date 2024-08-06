@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 * {
     margin: 0;
@@ -10,11 +10,12 @@
 .headerAreaTotal {
     background-color: #f8f3eb;
     width: 100vw;
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Inter, sans-serif;
+    
    
 }
 
@@ -26,7 +27,10 @@
 }
 
 .logoHeaderImg {
-    height: 150px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ondeAreaHeaderAll {
@@ -63,33 +67,26 @@
 .obilongo {
     display: flex;
     border: solid black 2px;
-    height: 60px;
+    height: 120px;
     width: 100px;
     position: absolute;
     right: 0px;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
-}
+} */
 
 
 
- /* @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
- *,
+ /* *,
  *::before,
  *::after {
    box-sizing: border-box;
- }
+ } */
  
- body {
-   margin: 0;
-   padding: 0;
-   background-color: #010101;
-   font-family: "Ubuntu", sans-serif;
- }
- 
- a {
+ .aHeader {
    text-decoration: none;
  }
 
@@ -97,67 +94,63 @@
     height: 150px;
 }
  
- button {
-   border: 0;
-   outline: none;
-   font-family: inherit;
-   font-size: inherit;
-   cursor: pointer;
- }
  
- .navbar {
-   height: 90px;
-   background-color: hsl(0, 0%, 10%);
+ .navbarHeader {
+   height: 140px;
+   background-color: #f8f3eb;
    padding: 20px 40px;
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
+   width: 100vw;
  }
  
- .navbar .logo i {
-   color: #0aa5ff;
+ .navbarHeader .logo i {
+   color: #d2ab80;
    font-size: 22px;
  }
  
- .navbar .logo a {
+ .navbarHeader .logo a {
    font-size: 24px;
    font-weight: 700;
    color: white;
    margin-left: 12px;
  }
  
- .menu {
+ .menuHeader {
    display: flex;
    align-items: center;
+   justify-content: center;
    gap: 32px;
  }
  
- .menu-links {
+ .menu-links-Header {
    display: flex;
    gap: 24px;
-   border-right: 1px solid #999999;
+   /* border-right: 1px solid #999999; */
    padding-inline: 24px;
  }
  
- .menu-links a {
+ .menu-links-Header a {
    font-weight: 500;
    color: #999999;
    padding: 8px 16px;
  }
- .menu-links a:hover {
+ .menu-links-Header a:hover {
    color: white;
  }
- .log-in {
+ .btnLoginHeader{
    font-weight: 500;
    padding: 12px 22px;
    background-color: transparent;
    color: #999999;
    border-radius: 10px;
-   border: 2px solid #0aa5ff;
+   border: 2px solid #d2ab80;
    transition: 0.2s;
+   font-size: 30px;
  }
- .log-in:hover {
-   background-color: #0aa5ff;
+ .btnLoginHeader:hover {
+   background-color: #d2ab80;
    color: white;
  }
  
@@ -169,11 +162,11 @@
  }
  
  @media (max-width: 53rem) {
-   .menu {
+   .menuHeader {
      display: none;
    }
  
    .menu-btn {
      display: block;
    }
- } */
+ }

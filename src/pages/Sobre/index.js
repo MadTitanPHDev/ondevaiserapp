@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 
 const Sobre = () => {
   return (
-    <div className='container'>
+    <div className=''>
     <Layout>
         
     </Layout>

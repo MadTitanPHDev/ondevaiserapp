@@ -141,8 +141,8 @@
   object-fit: cover;
   /* height: 120px;
   width: 120px;
-  border-radius: 120px; */
-}
+  border-radius: 120px; 
+}*/
 
 .aBtnCL {
   text-decoration: none;
@@ -151,5 +151,47 @@
 .aBtnCL:visited {
   color: inherit;
 
+}
+
+.btnAreaCadastroLocal
+{
+  display: flex;
+  width: 100%;
+}
+
+/* .btnCadastroLocal {
+    all: unset;
+} */
+
+.btnCadastroLocal {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 26px;
+  background-color: #f8f3eb;
+  border: 2px solid #d2ab80;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.btnbtnCadastroLocal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #d2ab80;
+  border-radius: inherit;
+  translate: 6px 6px;
+  transition: 0.25s;
+  z-index: -1;
+}
+
+.btnbtnCadastroLocal:hover::after {
+  translate: 0;
+}
+.btnCadastroLocal:hover {
+  background-color: #d2ab80;
+  color: #f8f3eb;
 }
 

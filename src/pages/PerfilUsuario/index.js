@@ -42,13 +42,13 @@ const PerfilUsuario = () => {
                         <img className='chacara1' src={chácara1} alt="Imagem de uma chácara"/>
 
                         <div className='textoLugar1'>
-                            <strong className='titulo'><p>Chácara São Francisco</p></strong>
+                            <strong className='titulo'><p>Casa de laser do Fernando</p></strong>
                             <p><strong>Capacidade:</strong> 200 pessoas</p>
                             <p><strong>Cidade:</strong> Presidente Prudente</p>
-                            <p><strong>Endereço:</strong> Av. Joaquim Constantino, 6600</p>
+                            <p><strong>Endereço:</strong>Avenida Washington Luiz, 1934</p>
                             <p><strong>Bairro:</strong> Vila Nova Prudente</p>
-                            <p><strong>CEP:</strong> 19021-203</p>
-                            <p><strong>Valor:</strong> R$900,00</p>
+                            <p><strong>CEP:</strong> 19000-000</p>
+                            <p><strong>Valor:</strong> R$350,00</p>
                             <p><strong>Características:</strong> Cozinha, Acessibilidade, Churrascaria, Espaço aberto, Estacionamento.</p>
                             <p><strong>Descrição:</strong> Um lugar para qualquer tipo de festa, com área para churrasco com piscina contendo degrau para crianças.</p>
                             <p><strong>Avaliação:</strong>4.8</p>

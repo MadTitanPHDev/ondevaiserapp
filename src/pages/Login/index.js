@@ -42,19 +42,20 @@ const Login = () => {
                         <label>
                             <a href="#">Esqueceu a senha?</a>
                         </label>
-                    </div>
 
+
+                    </div>
                     <div className='btnAreaLogin'>
-                        <a href='/'>
-                            {/* <button className='btnLogin'>
+                    <a href='/'>
+                        {/* <button className='btnLogin'>
                             Entrar
                         </button> */}
-                            <button className='btnLogin' onclick="history.back()">Entrar</button>
-                        </a>
-
-                    </div>
+                        <button className='btnLogin' onclick="history.back()">Entrar</button>
+                    </a>
                 </div>
 
+                </div>
+                
 
             </div>
         </Layout>

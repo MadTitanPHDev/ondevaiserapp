@@ -12,13 +12,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .loginBodyArea {
     font-family: Inter, sans-serif;
     height: 100%;
     width: 70vw;
-    background-color: #f8f3eb;
+    background-color: #FFE8D6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,12 +120,11 @@
 
   .esqSenhaArea {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-direction: column;
     margin: 10px 0 15px;
     font-size: 0.9em;
     color: #809671;
-    flex: 1;
   }
   .esqSenhaArea label:nth-child(2) {
     order: 1;

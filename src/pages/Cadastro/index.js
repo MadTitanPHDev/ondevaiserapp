@@ -49,12 +49,12 @@ const Cadastro = () => {
                                 </Field>
                             </div>
             
-                            <div className='campoArea'>
-                                <Field className='inputField' type='text' name='nick' id='nick' placeHolder='Nome de Usuário'>
+                            {/* <div className='campoArea'>
+                                <Field className='inputField' type='text' name='nick' id='nick' placeHolder='Nome de Usuário'> */}
                                     {/* <label>Nome de Usuário</label>
                                     <input className='inputArea' type='text' name='nick' id='nick' /> */}
-                                </Field>
-                            </div>
+                                {/* </Field>
+                            </div> */}
 
                             <div className='campoArea'>
                                 <InputMask className='inputField' onBlur={handleBlur} onChange={handleChange} value={values.cpf} mask="999.999.999-99" type='cpf' name='cpf' id='cpf' placeHolder='CPF'>

@@ -52,10 +52,12 @@ const Header = () => {
                 <div class="menuHeader">
                     <div class="menu-links-Header">
                         <a className='aHeader' href="/">Home</a>
+                        <a className='aHeader' href="/Sobre">Sobre nós</a>
+                        <a className='aHeader' href="/Categoria">Categoria</a>
                         <a className='aHeader' href="/Cadastro">Cadastre-se</a>
                         <a className='aHeader' href="/CadastroLocal">Cadastre seu espaço</a>
-                        <a className='aHeader' href="/Sobre">Sobre nós</a>
-                        <a className='aHeader' href="/">Contato</a>
+                        <a className='aHeader' href="/PerfilUsuario">Perfil de Usuario</a>
+                        {/* <a className='aHeader' href="/">Contato</a> */}
                     </div>
                     <a href='/Login'>
                     <button class="btnLoginHeader">Entrar</button>

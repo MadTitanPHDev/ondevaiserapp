@@ -88,6 +88,9 @@
  
  .aHeader {
    text-decoration: none;
+   font-size: 22px;
+   font-weight: 1000;
+   /* font-family: 'Courier New', Courier, monospace; */
  }
 
  .logoHeaderImg {
@@ -105,8 +108,10 @@
    width: 100vw;
 
    
-   --s: 100px; /* control the size */
-   --c1: #f8b195;
+   /* --s: 100px; /
+   
+   --c1: #d2ab80;
+   
    --c2: #355c7d;
  
    --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
@@ -127,7 +132,7 @@
          var(--c1) 96%
        )
        var(--c1);
-   background-size: var(--s) var(--s);
+   background-size: var(--s) var(--s); */
   
  }
  
@@ -139,7 +144,7 @@
  .navbarHeader .logo a {
    font-size: 24px;
    font-weight: 700;
-   color: white;
+   /* color: white; */
    margin-left: 12px;
  }
  
@@ -159,7 +164,7 @@
  
  .menu-links-Header a {
    font-weight: 500;
-   color: #999999;
+   color: #000000;
    padding: 8px 16px;
  }
  .menu-links-Header a:hover {
@@ -182,7 +187,7 @@
  
  .menu-btn {
    font-size: 32px;
-   color: white;
+   /* color: white; */
    display: none;
    cursor: pointer;
  }

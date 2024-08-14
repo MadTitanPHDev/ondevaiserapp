@@ -88,6 +88,9 @@
  
  .aHeader {
    text-decoration: none;
+   font-size: 22px;
+   font-weight: 1000;
+   /* font-family: 'Courier New', Courier, monospace; */
  }
 
  .logoHeaderImg {
@@ -96,13 +99,41 @@
  
  
  .navbarHeader {
-   height: 140px;
+   height: 125px;
    background-color: #f8f3eb;
    padding: 20px 40px;
    display: flex;
    justify-content: center;
    align-items: center;
    width: 100vw;
+
+   
+   /* --s: 100px; /
+   
+   --c1: #d2ab80;
+   
+   --c2: #355c7d;
+ 
+   --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
+     var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
+     var(--c1) 76% 84%, var(--c2) 86% 94%;
+   background: radial-gradient(
+       100% 100% at 100% 0,
+       var(--c1) 4%,
+       var(--_g),
+       #0008 96%,
+       #0000
+     ),
+     radial-gradient(
+         100% 100% at 0 100%,
+         #0000,
+         #0008 4%,
+         var(--_g),
+         var(--c1) 96%
+       )
+       var(--c1);
+   background-size: var(--s) var(--s); */
+  
  }
  
  .navbarHeader .logo i {
@@ -113,7 +144,7 @@
  .navbarHeader .logo a {
    font-size: 24px;
    font-weight: 700;
-   color: white;
+   /* color: white; */
    margin-left: 12px;
  }
  
@@ -133,7 +164,7 @@
  
  .menu-links-Header a {
    font-weight: 500;
-   color: #999999;
+   color: #000000;
    padding: 8px 16px;
  }
  .menu-links-Header a:hover {
@@ -156,7 +187,7 @@
  
  .menu-btn {
    font-size: 32px;
-   color: white;
+   /* color: white; */
    display: none;
    cursor: pointer;
  }

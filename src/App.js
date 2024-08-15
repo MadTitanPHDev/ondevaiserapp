@@ -8,55 +8,52 @@ import CadastroLocal from './pages/Cadastrolocal';
 import MaisInformacoes from './pages/MaisInformacoes';
 import Categoria from './pages/Categoria';
 import PerfilUsuario from './pages/PerfilUsuario';
-import ClientPrivateRoute from './components/Auth/ClientPrivateRoute';
 
 function App() {
   return (
     <Routes>
       
-      <Route exact path='/' element = {
+      <Route path='/' element = {
          <Home />
       }>
       </Route>
 
-      <Route exact path='/cadastro' element = {
+      <Route path='/cadastro' element = {
         <Cadastro />
       }>
 
       </Route>
-      <Route exact path='/MaisInformacoes' element = {
+      <Route path='/MaisInformacoes' element = {
         <MaisInformacoes />
       }>
       </Route>
 
-      <Route exact path='/Login' element = {
+      <Route path='/Login' element = {
          <Login />
       }>
       </Route>
 
-      <Route exact path='/Sobre' element = {
+      <Route path='/Sobre' element = {
          <Sobre />
       }>
       </Route>
 
-      <Route exact path='/CadastroLocal' element = {
+      <Route path='/CadastroLocal' element = {
          <CadastroLocal />
       }>
       </Route>
       
-      <Route exact path='/Categoria' element = {
+      <Route path='/Categoria' element = {
          <Categoria />
       }>
       </Route>
 
-      <Route exact path='/PerfilUsuario' element = {
-         <ClientPrivateRoute>
-            <PerfilUsuario />
-         </ClientPrivateRoute>
+      <Route path='/PerfilUsuario' element = {
+         <PerfilUsuario />
       }>
       </Route>
 
-      <Route exact path='/Sobre' element = {
+      <Route path='/Sobre' element = {
          <Sobre />
       }>
       </Route>

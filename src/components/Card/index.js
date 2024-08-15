@@ -21,13 +21,6 @@ const Card = ({ imgsrc }) => {
     <a href='/Categoria' class="card"> 
         <div class="image-box">
           <img className='imgBox' src={imgsrc} />
-
-
-
-          <img className='imgBox' src='../../assets/images/' />
-
-
-
         </div>
         <div class="textoCard">
           <h2>Casas de Lazer</h2>

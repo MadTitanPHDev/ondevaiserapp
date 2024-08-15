@@ -9,7 +9,7 @@ const Login = () => {
 
     const navigate = useNavigate();
     const [dados, setDados] = useState({
-        username: '',
+        email: '',
         senha: ''
       })
       const {logado, setLogado} = useInfoContext()
@@ -51,8 +51,8 @@ const Login = () => {
                         <h1 className='loginTxt'>Boas vindas novamente!</h1>
                     </div>
                     <div className='loginInputArea'>
-                        <input onChange={handleChange} value={dados.username} className='inputLogin' required autocomplete="off" type="text" name="username" id="username" />
-                        <label className='loginLabel' for='username'>Email</label>
+                        <input onChange={handleChange} value={dados.email} className='inputLogin' required autocomplete="off" type="text" name="email" id="email" />
+                        <label className='loginLabel' for='email'>Email</label>
                     </div>
 
                     <div className='passArea'>
@@ -68,11 +68,13 @@ const Login = () => {
                         </label> */}
                         <div class="checkbox-wrapper-46">
                             <input type="checkbox" id="cbx-46" class="inp-cbx" />
-                            <label for="cbx-46" class="cbx"
-                            ><span>
+                            <label for="cbx-46" class="cbx">
+                                <span>
                                     <svg viewBox="0 0 12 10" height="10px" width="12px">
-                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
-                                ><span>Lembre de mim.</span>
+                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                    </svg>
+                                </span>
+                                <span>Lembre de mim.</span>
                             </label>
                         </div>
 

@@ -30,27 +30,26 @@ const Cadastro = () => {
   return (  
     <Layout>
         <Formik
-            // initialValues={initialUsuario}
-            // onSubmit={(values, actions) => {
-            //     const newUser = 
-            //     {
-            //         id: users[users.length-1]?.id ? users[users.length-1]?.id+1 : 1,
-            //         nome: values.nome,
-            //         nick: values.nick,
-            //         cpf: values.cpf,
-            //         email: values.email,
-            //         senha: values.senha,
-            //         telefone: values.telefone,
-            //     }
+            initialValues={initialUsuario}
+            onSubmit={(values, actions) => {
+                const newUser = 
+                {
+                    nome: values.nome,
+                    nick: values.nick,
+                    cpf: values.cpf,
+                    email: values.email,
+                    senha: values.senha,
+                    telefone: values.telefone,
+                }
 
-            //     addUser(newUser);
+                api.post('/cadastro', newUser).then(data => console.log(data))
 
-            //     actions.setValues(
-            //         initialUsuario
-            //     )
-            // }}
+                actions.setValues(
+                    initialUsuario
+                )
+            }}
         >
-            {/* {({values, setValues, handleChange, handleBlur}) => ( */}
+            {({values, setValues, handleChange, handleBlur}) => (
                 <section className='cadastroContainer'>
                     
                     <div>
@@ -60,37 +59,37 @@ const Cadastro = () => {
                     </div>
 
                     <div className='formArea'>
-                        <Form method='post' onSubmit={handleCadastrar} className='form'>
+                        <Form method='post' className='form'>
                             <div className='campoArea'>
-                                <Field className='inputField' onChange={handleChange} value={dados.nome} type='text' name='nome' id='nome' placeHolder="Nome">
+                                <Field className='inputField' onBlur={handleBlur} onChange={handleChange}  type='text' name='nome' id='nome' placeHolder="Nome">
                                     {/* <label>Nome</label>
                                     <input className='inputArea' type='text' name='nome' id='nome' /> */}
                                 </Field>
                             </div>
             
                             <div className='campoArea'>
-                                <InputMask className='inputField' onBlur={handleBlur} onChange={handleChange} value={dados.cpf} mask="999.999.999-99" type='cpf' name='cpf' id='cpf' placeHolder='CPF'>
+                                <InputMask className='inputField' onBlur={handleBlur} onChange={handleChange}   mask="999.999.999-99" type='cpf' name='cpf' id='cpf' placeHolder='CPF'>
                                     {/* <label>CPF</label>
                                     <input className='inputArea' type='text' name='cpf' id='cpf' /> */}
                                 </InputMask>
                             </div>
             
                             <div className='campoArea'>
-                                <Field className='inputField' onChange={handleChange} value={dados.email} type='email' name='email' id='email' placeHolder='Email'>
+                                <Field className='inputField'  onBlur={handleBlur} onChange={handleChange}  type='email' name='email' id='email' placeHolder='Email'>
                                     {/* <label>Email</label>
                                     <input className='inputArea' type='email' name='email' id='email' /> */}
                                 </Field>
                             </div>
             
                             <div className='campoArea'>
-                                <Field className='inputField' onChange={handleChange} value={dados.senha} type='password' name='senha' id='senha' placeHolder='Senha'>
+                                <Field className='inputField'  onBlur={handleBlur} onChange={handleChange}  type='password' name='senha' id='senha' placeHolder='Senha'>
                                     {/* <label>Senha</label>
                                     <input className='inputArea' type='password' name='password' id='password' /> */}
                                 </Field>
                             </div>
             
                             <div className='campoArea'>
-                                <InputMask onBlur={handleBlur} onChange={handleChange} className='inputField' value={dados.telefone} mask="(99)99999-9999" type='phone' name='telefone' id='telefone' placeHolder='Telefone'>
+                                <InputMask onBlur={handleBlur} onChange={handleChange}  className='inputField'  mask="(99)99999-9999" type='phone' name='telefone' id='telefone' placeHolder='Telefone'>
                                     {/* <label>Numero de telefone com WhatsApp</label>
                                     <input className='inputArea' type='number' name='number' maxLength={11} id='number' /> */}
                                 </InputMask>
@@ -108,7 +107,7 @@ const Cadastro = () => {
                     </div>
                 
                 </section>
-            {/* )} */}
+            )}
         
         </Formik>
     </Layout>

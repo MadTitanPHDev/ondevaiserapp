@@ -12,27 +12,27 @@ import { createContext, useContext, useState } from "react"
 //     {id: 2, nomeLocal: 'Eloisa', endereco: 'Rua dos Ipes', cep: '19000000', valor: '3000', carac: 'garagem, freezer, fogao, churrasqueira, piscina, internet wifi, mesas e cadeiras', descr: 'Ideal para uma semana de Home-Office enquanto a família se diverte. Cidade rodeada por Cachoeiras e Montanhas. Fácil acesso saindo de São Paulo.'}
 // ]
  
-// const initialUsuario =
-// {
-//     id: 0,
-//     nome: '',
-//     nick: '',
-//     cpf: '',
-//     email: '',
-//     senha: '',
-//     telefone: ''
-// }
+const initialUsuario =
+{
+    id: 0,
+    nome: '',
+    nick: '',
+    cpf: '',
+    email: '',
+    senha: '',
+    telefone: ''
+}
  
-// const initialLocal =
-// {
-//     id: 0,
-//     nomeLocal: '',
-//     endereco: '',
-//     cep: '',
-//     valor: '',
-//     carac: '',
-//     descr: ''
-// }
+const initialLocal =
+{
+     id: 0,
+   nomeLocal: '',
+   endereco: '',
+   cep: '',
+   valor: '',
+   carac: '',
+   descr: ''
+}
  
 const InfoContext = createContext(undefined);
  
@@ -91,8 +91,8 @@ const useInfoContext = () =>
  
 export
 {
-    // initialUsuario,
-    // initialLocal,
+    initialUsuario,
+    initialLocal,
     InfoProvider,
     useInfoContext
 }

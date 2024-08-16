@@ -25,7 +25,7 @@ const Login = () => {
       
       const handleCadastrar = (e) => {
         e.preventDefault();
-        api.post('/Login', dados).then(data => 
+        api.post('/login', dados).then(data => 
         {
           console.log(data)
           if(!data.data) {

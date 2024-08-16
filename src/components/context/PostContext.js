@@ -14,9 +14,7 @@ import { createContext, useContext, useState } from "react"
  
 const initialUsuario =
 {
-    id: 0,
     nome: '',
-    nick: '',
     cpf: '',
     email: '',
     senha: '',

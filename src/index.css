@@ -16,3 +16,51 @@ a:visited {
   color: inherit; 
 }
 
+.containerSobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.sobreArea {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout de colunas */
+.sobreAreaContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sobreAreaContent > div {
+  flex: 1;
+  min-width: 300px; /* Ajusta o tamanho mínimo das colunas */
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sobreAreaContent h1 {
+  font-size: 2.5em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.sobreAreaContent p {
+  font-size: 1.2em;
+  color: #666666;
+  line-height: 1.6;
+}
+

@@ -24,7 +24,7 @@ const Cadastro = () => {
 
     const handleCadastrar = (e) => {
         e.preventDefault();
-        api.post('/cadastro', dados).then(data => console.log(data))
+        api.post('/users', dados).then(data => console.log(data))
     }
 
     return (
@@ -41,7 +41,7 @@ const Cadastro = () => {
                         telefone: values.telefone,
                     }
 
-                    api.post('/cadastro', newUser).then(data => console.log(data))
+                    api.post('/users', newUser).then(data => console.log(data))
 
                     actions.setValues(
                         initialUsuario

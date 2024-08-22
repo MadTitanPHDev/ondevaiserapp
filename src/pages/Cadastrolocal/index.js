@@ -1,4 +1,4 @@
-import './style.css'
+import './style.css';
 import { Field, Form, Formik } from 'formik';
 import { initialLocal, useInfoContext } from '../../components/context/PostContext';
 import Layout from '../../components/Layout';

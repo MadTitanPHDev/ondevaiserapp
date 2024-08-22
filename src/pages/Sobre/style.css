@@ -1,3 +1,56 @@
-.sobre {
-    background-color: green;
-}
+.containerSobre {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .sobreArea {
+    max-width: 2000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .sobreArea h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+   
+  }
+  
+  .sobreArea p {
+    
+      
+        font-size: 1.6rem; /* Aumenta o tamanho da fonte */
+        color: #666;
+        line-height: 3.6;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: bold; /* Deixa o texto em negrito *
+    
+     Deixa o texto em negrito */
+  
+    
+  }
+  
+  .sobreImage {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 20px 0;
+  }
+
+  #salon
+  {
+    height: 1000px;
+    width: 600px;
+  }
+  .sobreSalon p
+  {
+    font-size: 1.6rem; /* Aumenta o tamanho da fonte */
+    color: #666;
+    line-height: 3.6;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold; /* Deixa o texto em negrito *
+
+ Deixa o texto em negrito */
+  }

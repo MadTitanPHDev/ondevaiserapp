@@ -44,7 +44,7 @@ function App() {
          }>
          </Route>
 
-         <Route exact path='/Categoria/:id' element={
+         <Route exact path='/Categoria' element={
             <ClientPrivateRoute>
                <Categoria />
             </ClientPrivateRoute>
@@ -52,9 +52,9 @@ function App() {
          </Route>
 
          <Route exact path='/PerfilUsuario' element={
-            <ClientPrivateRoute>
+            // <ClientPrivateRoute>
                <PerfilUsuario />
-            </ClientPrivateRoute>
+            // </ClientPrivateRoute>
          }>
          </Route>
 

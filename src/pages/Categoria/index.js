@@ -45,22 +45,7 @@ const Categoria = () => {
                             </div>
                         </div>
 
-                        <div className="cardAreaCat">
-                            <a className="cardContentCat2" href='/MaisInformacoes' target="_blank" rel="noopener noreferrer"></a>
-                            <div className="cardtexto">
-                                <div className="cardtextoHeader">
-                                    <a href='../../pages/Categoria' target="_blank" rel="noopener noreferrer">
-                                        <p className='letraMaior'>Casa de Campo</p>
-                                    </a>
-                                    <FaStar className='star' />
-                                </div>
-                                <div className='letraMenor'>
-                                    <p>1km de distância</p>
-                                    <p>12 de dez</p>
-                                    <p>R$550,00</p>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

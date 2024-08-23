@@ -6,7 +6,7 @@ const Card = ({ imgsrc }) => {
   return (
 
 
-    <a href='/Categoria3' class="cardH" id='cardH2'> 
+    <a href='/Categoria?id=3' class="cardH" id='cardH2'> 
         <div class="image-box">
           <img className='imgBox' src={imgsrc} />
         </div>

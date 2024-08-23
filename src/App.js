@@ -11,58 +11,60 @@ import PerfilUsuario from './pages/PerfilUsuario';
 import ClientPrivateRoute from './components/Auth/ClientPrivateRoute';
 
 function App() {
-  return (
-    <Routes>
-      
-      <Route exact path='/' element = {
-         <Home />
-      }>
-      </Route>
+   return (
+      <Routes>
 
-      <Route exact path='/cadastro' element = {
-        <Cadastro />
-      }>
+         <Route exact path='/' element={
+            <Home />
+         }>
+         </Route>
 
-      </Route>
-      <Route exact path='/MaisInformacoes' element = {
-        <MaisInformacoes />
-      }>
-      </Route>
+         <Route exact path='/cadastro' element={
+            <Cadastro />
+         }>
 
-      <Route exact path='/Login' element = {
-         <Login />
-      }>
-      </Route>
+         </Route>
+         <Route exact path='/MaisInformacoes' element={
+            <MaisInformacoes />
+         }>
+         </Route>
 
-      <Route exact path='/Sobre' element = {
-         <Sobre />
-      }>
-      </Route>
+         <Route exact path='/Login' element={
+            <Login />
+         }>
+         </Route>
 
-      <Route exact path='/CadastroLocal' element = {
-         <CadastroLocal />
-      }>
-      </Route>
-      
-      <Route exact path='/Categoria' element = {
-         <Categoria />
-      }>
-      </Route>
+         <Route exact path='/Sobre' element={
+            <Sobre />
+         }>
+         </Route>
 
-      <Route exact path='/PerfilUsuario' element = {
-         <ClientPrivateRoute>
-            <PerfilUsuario />
-         </ClientPrivateRoute>
-      }>
-      </Route>
+         <Route exact path='/CadastroLocal' element={
+            <CadastroLocal />
+         }>
+         </Route>
 
-      <Route exact path='/Sobre' element = {
-         <Sobre />
-      }>
-      </Route>
+         <Route exact path='/Categoria/:id' element={
+            <ClientPrivateRoute>
+               <Categoria />
+            </ClientPrivateRoute>
+         }>
+         </Route>
 
-    </Routes>
-  );
+         <Route exact path='/PerfilUsuario' element={
+            <ClientPrivateRoute>
+               <PerfilUsuario />
+            </ClientPrivateRoute>
+         }>
+         </Route>
+
+         <Route exact path='/Sobre' element={
+            <Sobre />
+         }>
+         </Route>
+
+      </Routes>
+   );
 }
 
 export default App;

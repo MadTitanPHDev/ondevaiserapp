@@ -45,16 +45,16 @@ function App() {
          </Route>
 
          <Route exact path='/Categoria' element={
-            <ClientPrivateRoute>
+            // <ClientPrivateRoute>
                <Categoria />
-            </ClientPrivateRoute>
+            // </ClientPrivateRoute>
          }>
          </Route>
 
          <Route exact path='/PerfilUsuario' element={
-            // <ClientPrivateRoute>
+            <ClientPrivateRoute>
                <PerfilUsuario />
-            // </ClientPrivateRoute>
+             </ClientPrivateRoute>
          }>
          </Route>
 

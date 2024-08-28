@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 800px;
+    height: 100%;
     flex: 1;
 }
 
@@ -49,9 +49,12 @@
 
 .categoriaContent {
     display: flex;
-    flex-direction: row; /* Cards in a row */
-    overflow-x: auto; /* Horizontal scroll */
-    gap: 10px; /* Space between cards */
+    flex-direction: row;
+    /* Cards in a row */
+    overflow-x: auto;
+    /* Horizontal scroll */
+    gap: 10px;
+    /* Space between cards */
     width: 100%;
     padding: 10px;
 }
@@ -64,7 +67,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    flex-shrink: 0; /* Prevent shrinking */
+    flex-shrink: 0;
+    /* Prevent shrinking */
 }
 
 .cardContentCat {
@@ -117,4 +121,40 @@
 
 .letraMenor {
     font-size: 15px;
+}
+
+
+.categoriaContainer {
+    max-width: 1500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+
+.container-input {
+    position: relative;
+}
+
+.inputSearch {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+}
+
+.container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.inputSearch:focus {
+    opacity: 1;
+    width: 250px;
 }

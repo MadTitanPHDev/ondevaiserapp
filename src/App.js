@@ -10,6 +10,8 @@ import Categoria from './pages/Categoria';
 import PerfilUsuario from './pages/PerfilUsuario';
 import ClientPrivateRoute from './components/Auth/ClientPrivateRoute';
 
+
+
 function App() {
    return (
       <Routes>
@@ -34,10 +36,6 @@ function App() {
          }>
          </Route>
 
-         <Route exact path='/Sobre' element={
-            <Sobre />
-         }>
-         </Route>
 
          <Route exact path='/CadastroLocal' element={
             <CadastroLocal />

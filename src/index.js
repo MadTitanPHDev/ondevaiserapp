@@ -7,6 +7,8 @@ import { InfoProvider } from './components/context/PostContext';
 // import { QueryClient, QueryClientProvider } from 'react-query';
 
 
+// var idEloisa = 0
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const queryClient = new QueryClient();
 

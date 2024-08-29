@@ -1,10 +1,10 @@
 import './styles.css';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Field, Form, Formik } from 'formik';
 import { initialUsuario, useInfoContext } from '../../components/context/PostContext';
 import Layout from '../../components/Layout';
 import InputMask from 'react-input-mask';
-import api from '../../services/api'
+import api from '../../services/api';
 
 const Cadastro = () => {
 

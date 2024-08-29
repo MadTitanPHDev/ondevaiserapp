@@ -28,7 +28,7 @@ const initialLocal =
    endereco: '',
    cep: '',
    valor: '',
-   carac: '',
+//    carac: '',
    descr: ''
 }
  

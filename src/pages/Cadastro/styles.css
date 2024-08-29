@@ -10,11 +10,13 @@
 }
  
 .cadastroContainer {
-    background-color: white;
+    background-color: #F8F8F8;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 80vh;
+   
 }
  
 .inputField
@@ -40,7 +42,7 @@
 }
  
 .formArea {
-    width: 420px;
+    width: 700px;
     height: auto;
     display: flex;
     padding-top: 8px;

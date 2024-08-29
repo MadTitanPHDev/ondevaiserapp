@@ -51,12 +51,11 @@ const Cadastro = () => {
                 {({ values, setValues, handleChange, handleBlur }) => (
                     <section className='cadastroContainer'>
 
-                        <div>
+                        
                             <h1 className='dados'>
                                 Insira seus dados para realizar o cadastro
                             </h1>
-                        </div>
-
+                    
                         <div className='formArea'>
                             <Form method='post' className='form'>
                                 <div className='campoArea'>

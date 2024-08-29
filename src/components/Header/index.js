@@ -6,42 +6,7 @@ import { FaUser, FaBars } from 'react-icons/fa';
 
 const Header = () => {
     return (
-        // <header className='headerAreaTotal'>
-        //     <div className='logoHeader'>
-        //         <a href='/'><img className='logoHeaderImg' src={LogoOndeVaiSer}></img></a>
-        //     </div>
-
-        //     <div className='btnCadastroArea'>
-        //         <ol>
-        //             <li>
-        //                 <a href='/Cadastro'>Cadastro</a>
-        //             </li>
-        //         </ol>
-        //     </div>
-
-        //     <div className='ondeAreaHeaderAll'>
-        //         <div className='ondeAreaHeader'>
-        //             <h1 className='ondeTxtHeader'>Onde?</h1>
-        //         </div>
-        //         <select className='cidadesAreaHeader'>
-        //             <option value="0">SELECIONE A CIDADE</option>
-        //             <option value="1">SP - PRESIDENTE PRUDENTE</option>
-        //             <option value="2">SP - SANTO EXPEDITO</option>
-        //             <option value="3">SP - PIRAPOZINHO</option>
-        //             <option value="4">SP - INDIANA</option>
-        //         </select>
-        //     </div>
-
-        //     <div className='userArea'>
-
-        //     <a href='/Login'> <div className='obilongo'>
-        //             Login
-        //         </div></a>
-        //     </div>
-
-
-        // </header>
-
+       
         <header>
             <nav class="navbarHeader">
                 <div class="logo">
@@ -51,16 +16,46 @@ const Header = () => {
                 </div>
                 <div class="menuHeader">
                     <div class="menu-links-Header">
-                        <a className='aHeader' href="/">Home</a>
-                        <a className='aHeader' href="/Sobre">Sobre nós</a>
-                        <a className='aHeader' href="/Categoria">Categoria</a>
-                        <a className='aHeader' href="/Cadastro">Cadastre-se</a>
-                        <a className='aHeader' href="/CadastroLocal">Cadastre seu espaço</a>
-                        <a className='aHeader' href="/PerfilUsuario">Perfil de Usuario</a>
+                        <a className='aHeader' href="/">
+                            <button class="cta">
+                                <span>Home</span>
+                                
+                            </button>
+                        </a>
+                        <a className='aHeader' href="/Sobre">
+                        <button class="cta">
+                                <span>Sobre nós</span>
+                                
+                            </button>
+                            </a>
+                        <a className='aHeader' href="/Categoria">
+                        <button class="cta">
+                                <span>Categoria</span>
+                                
+                            </button>
+                            </a>
+                        <a className='aHeader' href="/Cadastro">
+                        <button class="cta">
+                                <span>Cadastre-se</span>
+                                
+                            </button>
+                        </a>
+                        <a className='aHeader' href="/CadastroLocal">
+                        <button class="cta">
+                                <span>Cadastre seu espaço</span>
+                                
+                            </button>
+                        </a>
+                        <a className='aHeader' href="/PerfilUsuario">
+                        <button class="cta">
+                                <span>Perfil de Usuario</span>
+                                
+                            </button>
+                        </a>
                         {/* <a className='aHeader' href="/">Contato</a> */}
                     </div>
                     <a href='/Login'>
-                    <button class="btnLoginHeader">Entrar</button>
+                        <button class="btnLoginHeader">Entrar</button>
                     </a>
                 </div>
                 <div class="menu-btn">

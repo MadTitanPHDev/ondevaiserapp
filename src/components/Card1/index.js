@@ -5,7 +5,7 @@ import './style.css'
 const Card = ({ imgsrc }) => {
   console.log(imgsrc)
   return (
-    <a href='/Categoria2' class="cardH" id='cardH1'> 
+    <a href='/Categoria?id=2' class="cardH" id='cardH1'> 
         <div class="image-box">
           <img className='imgBox' src={imgsrc} />
         </div>

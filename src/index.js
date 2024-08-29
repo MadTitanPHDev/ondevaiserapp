@@ -4,14 +4,20 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { InfoProvider } from './components/context/PostContext';
+// import { QueryClient, QueryClientProvider } from 'react-query';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// const queryClient = new QueryClient();
+
 root.render(
   <React.StrictMode>
-    <InfoProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </InfoProvider>
+    {/* <QueryClientProvider client={QueryClient} contextSharing> */}
+      <InfoProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </InfoProvider>
+    {/* </QueryClientProvider> */}
   </React.StrictMode>
 );

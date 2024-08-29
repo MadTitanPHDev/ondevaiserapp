@@ -1,90 +1,5 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: 0;
-}
-
-.headerAreaTotal {
-    background-color: #f8f3eb;
-    width: 100vw;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Inter, sans-serif;
-    
-   
-}
-
-.logoHeader {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-items: center;
-}
-
-.logoHeaderImg {
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.ondeAreaHeaderAll {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.cidadesAreaHeader {
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f3eb;
-    text-decoration: underline;
-    color: #d2ab80;
-}
-
-.ondeTxtHeader {
-    text-align: center;
-    padding: 40px;
-}
-
-
-
-.userArea {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 200px;
-}
-
-.obilongo {
-    display: flex;
-    border: solid black 2px;
-    height: 120px;
-    width: 100px;
-    position: absolute;
-    right: 0px;
-    border-radius: 50px;
-    align-items: center;
-    justify-content: center;
-} */
-
-
-
- @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
-
- /* *,
- *::before,
- *::after {
-   box-sizing: border-box;
- } */
  
  .aHeader {
    text-decoration: none;
@@ -95,6 +10,9 @@
 
  .logoHeaderImg {
     height: 150px;
+    width: 150px;
+  -webkit-filter: drop-shadow(5px 5px 5px #c9c9c9);
+  filter: drop-shadow(5px 5px 5px #a7a7a7);
 }
  
  
@@ -108,31 +26,6 @@
    width: 100vw;
 
   
-   /* --s: 100px; /
-   
-   --c1: #d2ab80;
-   
-   --c2: #355c7d;
- 
-   --_g: var(--c2) 6% 14%, var(--c1) 16% 24%, var(--c2) 26% 34%,
-     var(--c1) 36% 44%, var(--c2) 46% 54%, var(--c1) 56% 64%, var(--c2) 66% 74%,
-     var(--c1) 76% 84%, var(--c2) 86% 94%;
-   background: radial-gradient(
-       100% 100% at 100% 0,
-       var(--c1) 4%,
-       var(--_g),
-       #0008 96%,
-       #0000
-     ),
-     radial-gradient(
-         100% 100% at 0 100%,
-         #0000,
-         #0008 4%,
-         var(--_g),
-         var(--c1) 96%
-       )
-       var(--c1);
-   background-size: var(--s) var(--s); */
   
  }
  
@@ -201,3 +94,63 @@
      display: block;
    }
  }
+
+
+ /* From Uiverse.io by alexmaracinaru */ 
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #d2ab80;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #d2ab80;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}

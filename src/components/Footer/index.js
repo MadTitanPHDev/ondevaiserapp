@@ -6,9 +6,7 @@ const Footer = () => {
     return (
         <footer className='footerAreaTotal'>
             <div className='footerArea'>
-                <div className='footerSobre'>
-                    <a href='/Sobre'><h1 className='footerSobreTxt'>Sobre</h1></a>
-                </div>
+                
                 <div>
                     <div className='footerRedes'>
                         <div className='footerRedesTxt'>

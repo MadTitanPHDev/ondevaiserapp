@@ -5,8 +5,9 @@ import empresaImage from '../../assets/images/IAimage1_0.jpg1.jpg' // Certifique
 
 const Sobre = () => {
   return (
-    <div className='containerSobre'>
-      <Layout>
+
+    <Layout>
+      <div className='containerSobre'>
         <div className='sobreArea'>
           <h1>Sobre Nós</h1>
           <p>Onde vai ser?</p>
@@ -18,8 +19,9 @@ const Sobre = () => {
             É a maior empresa de espaços para festas do Brasil.
           </p>
         </div>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
+
   )
 }
 

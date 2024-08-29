@@ -21,8 +21,6 @@ const Home = () => {
           <Card2 imgsrc={img3Card} />
         </div>
 
-        
-
       </Layout>
 
     </div>

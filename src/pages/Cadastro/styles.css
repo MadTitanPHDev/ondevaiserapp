@@ -15,7 +15,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
+   
 }
  
 .inputField
@@ -41,7 +42,7 @@
 }
  
 .formArea {
-    width: 420px;
+    width: 700px;
     height: auto;
     display: flex;
     padding-top: 8px;

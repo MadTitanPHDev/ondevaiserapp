@@ -42,10 +42,10 @@ function App() {
          }>
          </Route>
 
-         <Route exact path='/Categoria/:idLocal' element={
-            <ClientPrivateRoute>
+         <Route exact path='/Categoria' element={
+            // <ClientPrivateRoute>
                <Categoria />
-            </ClientPrivateRoute>
+            // </ClientPrivateRoute>
          }>
          </Route>
 

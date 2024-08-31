@@ -15,7 +15,7 @@ const Categoria = () => {
         enabled: !!id
     })
     if (isLoading) {
-        return <div>carregando...</div>
+        return <div class="loader"></div>
     }
     console.log(id)
     console.log(locaisCategoria)

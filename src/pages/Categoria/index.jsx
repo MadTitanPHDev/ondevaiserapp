@@ -43,7 +43,7 @@ const Categoria = () => {
                         {locaisCategoria.map((item, index) => (
                             <li className='categoriaContent' key={index}>
                                 <div className="cardAreaCat">
-                                    <a className="cardContentCat" href={`/MaisInformacoes/${item?.idLocal}` }target="_blank" rel="noopener noreferrer">
+                                    <a className="cardContentCat" href={`/MaisInformacoes/${item?.idLocal}` } rel="noopener noreferrer">
                                     <img src={item?.img} alt='local' className='infoImg'  />
                                     </a>
                                     <div className="cardtexto">
@@ -54,8 +54,6 @@ const Categoria = () => {
                                             <FaStar className='star' />
                                         </div>
                                         <div className='letraMenor'>
-                                            <p>2km de distância</p>
-                                            <p>10 de dez</p>
                                             <p>R${item.valor}</p>
                                         </div>
                                     </div>

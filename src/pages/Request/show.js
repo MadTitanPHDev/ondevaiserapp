@@ -13,3 +13,8 @@ export const getLocal = async ({queryKey}) => {
     const [,{id}] = queryKey
     return api.get(`/locals/${id}`).then(res => res.data)
 }
+
+export const getUser = async ({queryKey}) => {
+    const [,{id}] = queryKey
+    return api.get(`users/${id}`).then(res => res.data)
+}

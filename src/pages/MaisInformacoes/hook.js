@@ -9,6 +9,8 @@ export const useLocalList = () => {
     const handleClickDetails = (idLocal) => {
         navigate (`/Locals/${idLocal}`)
     }
+
+    
     return{
         isLoading,
         local,

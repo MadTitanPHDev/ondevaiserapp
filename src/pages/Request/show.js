@@ -8,3 +8,8 @@ export const getCategoria = async ({queryKey}) => {
     const [, {id}] = queryKey
     return api.get(`/locals/tipoLocal/${id}`).then(res => res.data)
 }
+
+export const getLocal = async ({queryKey}) => {
+    const [,{id}] = queryKey
+    return api.get(`/locals/${id}`).then(res => res.data)
+}

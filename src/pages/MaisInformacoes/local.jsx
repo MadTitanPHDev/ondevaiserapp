@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 const Categoria = () => {
     const { idTipo } = useParams();
     const { data: categoria, isLoading } = useQuery(['getCategorias', { idTipo }], getCategorias, {
-        enable: !!idTipo
+        enable: !! idTipo
     })
 
     if (isLoading) {

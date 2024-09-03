@@ -5,13 +5,15 @@ import { FaMugHot, FaSearch, FaStar, FaTree, FaWarehouse } from 'react-icons/fa'
 import { getCategoria } from '../Request/show';
 import { useLocation, useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
+import { useCategoriaList } from './hook';
 
 
 const Categoria = () => {
     const location = useLocation();
+    const { handleClickDetails } = useCategoriaList();
     const params = new URLSearchParams(location.search);
     const id = params.get('id');
-    const { data: locaisCategoria, isLoading, handleClickDetails } = useQuery(['getCategoria', { id }], getCategoria, {
+    const { data: locaisCategoria, isLoading, } = useQuery(['getCategoria', { id }], getCategoria, {
         enabled: !!id
     })
     if (isLoading) {
@@ -39,9 +41,9 @@ const Categoria = () => {
                     <ul className='categoriaContainer'>
 
                         {locaisCategoria.map((item, index) => (
-                            <li onClick={() => handleClickDetails(item.id)} className='categoriaContent' key={index}>
+                            <li className='categoriaContent' key={index}>
                                 <div className="cardAreaCat">
-                                    <a className="cardContentCat" href='/MaisInformacoes' target="_blank" rel="noopener noreferrer">
+                                    <a className="cardContentCat" href={`/MaisInformacoes/${item?.idLocal}` }target="_blank" rel="noopener noreferrer">
                                     <img src={item?.img} alt='local' className='infoImg'  />
                                     </a>
                                     <div className="cardtexto">

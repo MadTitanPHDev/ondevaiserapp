@@ -26,7 +26,7 @@ function App() {
          }>
 
          </Route>
-         <Route exact path='/MaisInformacoes' element={
+         <Route exact path='/MaisInformacoes/:idLocal' element={
             <MaisInformacoes />
          }>
          </Route>

@@ -7,14 +7,26 @@ import img1 from '../../assets/images/casaF/Capa.jpeg';
 import img2 from '../../assets/images/casaF/2.jpeg';
 import img3 from '../../assets/images/casaF/3.jpeg';
 import img4 from '../../assets/images/casaF/6.jpeg';
-import pessoa from '../../assets/images/pessoa.png';
+// import pessoa from '../../assets/images/pessoa.png';
 import Layout from '../../components/Layout';
+import { useQuery } from 'react-query';
+import { useParams } from 'react-router-dom';
+import { getLocal } from '../Request/show';
 
 const MaisInformacoes = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(0);
     const images = [img1, img2, img3, img4];
 
+    const { idLocal } = useParams();
+    const { data: local, isLoading } = useQuery(['getLocal', {id: idLocal}], getLocal, {
+        enabled: !!idLocal
+    })
+    console.log(local)
+    console.log(idLocal)
+    if (isLoading) {
+        return <div>carregando...</div>
+    }
     const openModal = (index) => {
         setCurrentImage(index);
         setIsOpen(true);
@@ -38,8 +50,9 @@ const MaisInformacoes = () => {
     return (
         <Layout>
             <div className='bodyMaisInf'>
-                <div className='imgMaisInf'>
-                    {images.map((image, index) => (
+
+                {/* <div className='imgMaisInf'>
+                    {images?.map((image, index) => (
                         <img
                             key={index}
                             src={image}
@@ -47,11 +60,12 @@ const MaisInformacoes = () => {
                             className='thumbnail'
                         />
                     ))}
-                </div>
-                <h1 className='tituloMaisInf'>Casa de Laser do Fernando</h1>
+                </div> */}
+
+                <h1 className='tituloMaisInf'>{local?.nomeLocal}</h1>
                 <div className='basicInfo'>
                     <div className='pBasifInfo'>
-                        <p>A partir de: R$350,00 a diaria</p>
+                        <p>A partir de: {local?.valor} a diaria</p>
                         <p>Converse com o proprietario</p>
                     </div>
                     <a href={whatsappLink} className='btnMaisInfo' target="_blank" rel="noopener noreferrer">
@@ -65,9 +79,7 @@ const MaisInformacoes = () => {
                     <div className='descrInfo'>
                         <div className='descrTxtArea'>
                             <p>
-                                <strong>Descrição</strong>: Num dia quente de verão, a casa com piscina é um convite ao relaxamento e à diversão. A piscina brilha ao sol, convidando a um mergulho refrescante.
-                                Em volta, cadeiras confortáveis oferecem o lugar perfeito para descansar e aproveitar o momento. Com um churrasco na varanda e amigos ao redor,
-                                cada instante se torna uma memória alegre e inesquecível.
+                                <strong>Descrição</strong>: {local?.descr}
                             </p>
                         </div>
                         <div className='caracInfoArea'>
@@ -100,7 +112,7 @@ const MaisInformacoes = () => {
                     </div>
                 </div>
 
-                <div className='avaliacaoComent'>
+                {/* <div className='avaliacaoComent'>
                     <h1>Avaliações</h1>
                     <div className='avaliacao'>
                         <img className='pessoa' src={pessoa} alt="Imagem do usuário do perfil" />
@@ -112,7 +124,7 @@ const MaisInformacoes = () => {
                         <p>Que festa maravilhosa e tudo lindo, estão de parabéns.</p>
                         <p>O estacionamento podia ser maior, mas estava tudo lindo.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {isOpen && (

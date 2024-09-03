@@ -1,4 +1,5 @@
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useState, useEffect } from "react"
+import api from "../../services/api";
  
 // const dataSaveInitialUsuario =
 // [
@@ -28,12 +29,13 @@ const initialLocal =
    endereco: '',
    cep: '',
    valor: '',
-//    carac: '',
+   carac: '',
    descr: ''
 }
  
 const InfoContext = createContext(undefined);
  
+
 const InfoProvider = ({ children }) =>
 {
     // const [users, setUsers] = useState(dataSaveInitialUsuario);
@@ -68,6 +70,18 @@ const InfoProvider = ({ children }) =>
     // return <InfoContext.Provider value={{users, addUser, removeUser, local, addLocal, removeLocal}}>
     //     {children}
     // </InfoContext.Provider>;
+
+    // const [locals, setLocals] = useState([]);
+
+
+
+    // const addLocals = (local) => {
+    //     const localData = new FormData();
+    //     localData.append('local', JSON.stringify(local));
+    //     localData.append('file', local.file);
+    //    await api.post('/locals', localData)
+    
+    // }
 
     const [logado, setLogado] = useState(false);
 

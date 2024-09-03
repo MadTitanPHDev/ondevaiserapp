@@ -4,17 +4,31 @@ import Layout from '../../components/Layout'
 import pessoa from '../../assets/images/pessoa.png'
 import chácara1 from '../../assets/images/Chácara 1.jpg'
 import chácara3 from '../../assets/images/Chácara 3.jpg'
+import { useQuery } from 'react-query';
+import { useParams } from 'react-router-dom';
+import { getUser } from '../Request/show';
 
 const PerfilUsuario = () => {
+
+
+    const { idUser } = useParams();
+    const { data: user, isLoading } = useQuery(['getUser', {id: idUser}], getUser ,{
+        enable: !!idUser
+    })
+    
+    if (isLoading) {
+        return <div class="loader"></div>
+    }
   return (
+    <Layout>
     <div className='perfilArea'>
-        <Layout>
+        
             <section className='section'>
 
                 <div className='content2'>
 
                     <div className='areaSair'>
-                        <p>Área Exclusiva de Eloisa.</p>
+                        <p>Área Exclusiva de {user.nome}.</p>
                     </div>
                     
                     <a href='http://localhost:3000'><button className='buttonSair' id='buttonSair'>Sair</button></a>
@@ -94,8 +108,9 @@ const PerfilUsuario = () => {
                 </div>
 
             </section>
-        </Layout>
+       
     </div>
+    </Layout>
   )
 }
 
